@@ -1,0 +1,106 @@
+/*Blue Style*/
+
+body.blueStyle {background: #EDF2FF}
+.blueStyle .head {background: #5872AF;border-bottom: 2px solid #EDF2FF;}
+.blueStyle #menu .menu-text.active a {color: #5872AF} 
+.blueStyle .singleCol #post-container .pin-container .userInfo {background-color: #EDF2FF}
+.blueStyle .blue-button{background:#5872AF;border:1px solid #405DA0;color:#FFF}
+.blueStyle .blue-button:hover{border:1px solid #29447E;box-shadow:0 0 2px #666}
+.blueStyle .sidebarBlock .blockTitle {background:#5872AF;border:1px solid #5872AF;}
+.blueStyle .settingBox .settingContent .settingItem .toggle {background: #A2CA30}
+.blueStyle .settingBox .settingContent .settingItem .select .switch {background: #A2CA30;} 
+.blueStyle .pin-container .bottomInfo .block{background:#EDEFF4}
+.blueStyle .pin,
+.blueStyle .detailContainer #leftCol .mainWrap,
+.blueStyle .detailContainer .postContent .contentWrap,
+.blueStyle .detailContainer .fixedInfoPanel {border:1px solid #C4CDE0}
+.blueStyle .topHay .topHayContent,
+.blueStyle .settingBox .settingContent {border: 1px solid #C4CDE0;border-top: none}
+.blueStyle .topHay .topHayContent .topTabs .tab.active {background: #5872AF; border-color: #5872AF}
+.blueStyle .topHay .topHayContent .topTabs .tab.active:hover {background: #6A81BF;}
+.blueStyle .singleCol #post-container .pin-container .userInfo .nameFlag a,
+.blueStyle .detailContainer .postDetail .rightInfo .username a,
+.blueStyle .topHay .topHayContent .content .item .info .title a,
+.blueStyle .detailContainer .featuredFanPage h1,
+.blueStyle .detailContainer .sidebar .block .blockTitle .name,
+.blueStyle #menu .notif-msg .notifiContent li a strong,
+.blueStyle .loginContainer h1.title,
+.blueStyle .submitContainer #leftCol h1.title,
+.blueStyle .notificationContainer .notificationList li a,
+.blueStyle .featuredClips .clip a
+.blueStyle .unreadHome .item p,
+.blueStyle .pin-container .upperInfo .right a.name,
+.blueStyle .topUsers .info a, 
+.blueStyle .topUsers a.selected {color: #3B5998}
+.blueStyle #menu .notif-msg a.icon{background-position: -154px -134px}
+.blueStyle #menu .notif-msg a.followIcon{background-position: -82px -134px}
+.blueStyle #menu .notif-msg a.messageIcon{background-position: -118px -134px}
+.blueStyle #menu .menu-text.active .highlight {color: #A2CA30}
+.blueStyle .submitContainer .submitForm{border:1px solid #5871AD;}
+.blueStyle .submitContainer .tabBar .active{background:#5872AF;border:1px solid #5871AD}
+.blueStyle .submitContainer .tabBar .active:hover{background:#6A81BF}
+.blueStyle .topUserContainer .userList .info a{color:#3B5998;text-decoration:none}
+.blueStyle .topUserContainer .userList .info a:hover{color:#f15a24}
+.blueStyle .detailContainer .buttonWrap a.voteButton.voted{background:#A2CA30;color:#f0f0f0}
+.blueStyle .detailContainer .buttonWrap a.voteButton.voted:hover{background:#93BC1F;color:#f0f0f0}
+.blueStyle #menu .menu-text.active, 
+.blueStyle #menu .menu-text:hover{background-color: #EDF2FF;}
+.blueStyle .profileContainer .tabBar .tabBlock .active{background:#5871AD}
+.blueStyle .pin-container .bottomInfo a.voteButton{background:#CAD4E7;color:#6D84B4 !important;}
+.blueStyle .pin-container .bottomInfo a.voteButton.voted{background:#A2CA30;color:#fff !important}
+.blueStyle .pin-container .bottomInfo a.voteButton.voted:hover{background:#b3d841;color:#f0f0f0}
+.blueStyle #btnLoadMore{border:1px solid #5872AF;background:#5872AF}
+.blueStyle #btnLoadMore:hover{background:#6A81BF}
+/*.blueStyle .detailContainer .fixedInfoPanel{background:#EDF2FF}*/
+
+/*Black Style*/
+body.blackStyle {background: #F0F0F0}
+.blackStyle .head {background: #333333;border-bottom: 2px solid #EEEEEE;}
+.blackStyle #menu .menu-text.active a {color: #FF7C4D}
+.blackStyle .singleCol #post-container .pin-container .userInfo {background-color: #F0F0F0}
+.blackStyle .blue-button{background:#666666;border:1px solid #29447E;color:#FFF}
+.blackStyle .blue-button:hover{border:1px solid #29447E;box-shadow:0 0 2px #666}
+.blackStyle .sidebarBlock .blockTitle {background:#666666;border:1px solid #666666}
+.blackStyle .settingBox .settingContent .settingItem .toggle {background: #666666}
+.blackStyle .settingBox .settingContent .settingItem .select .switch {background: #666666} 
+.blackStyle .pin-container .bottomInfo .block{background:#F0F0F0}
+.blackStyle .pin,
+.blackStyle .detailContainer #leftCol .mainWrap,
+.blackStyle .detailContainer .postContent .contentWrap  {border:1px solid #D8D8D8}
+.blackStyle .settingBox .settingContent,
+.blackStyle .topHay .topHayContent {border: 1px solid #D8D8D8;border-top: none}
+.blackStyle .topHay .topHayContent .topTabs .tab.active {background: #666666; border-color: #666666}
+.blackStyle .topHay .topHayContent .topTabs .tab.active:hover {background: #999999;}
+.blackStyle .detailContainer .featuredFanPage h1,
+.blackStyle .topHay .topHayContent .content .item .info .title a,
+.blackStyle .detailContainer .postDetail .rightInfo .username a,
+.blackStyle .detailContainer .sidebar .block .blockTitle .name,
+.blackStyle #menu .notif-msg .notifiContent li a strong,
+.blackStyle .loginContainer h1.title,
+.blackStyle .submitContainer #leftCol h1.title,
+.blackStyle .notificationContainer .notificationList li a,
+.blackStyle .featuredClips .clip a,
+.blackStyle .unreadHome .item p,
+.blackStyle .pin-container .upperInfo .right a.name,
+.blackStyle .topUsers .info a,
+.blackStyle .topUsers .info a.selected {color:#666666}
+.blackStyle #menu .notif-msg a.icon{background-position: -154px -164px}
+.blackStyle #menu .notif-msg a.followIcon{background-position: -82px -164px}
+.blackStyle #menu .notif-msg a.messageIcon{background-position: -118px -164px}
+.blackStyle #menu .menu-text.active .highlight {color: #A2CA30}
+.blackStyle .submitContainer .tabBar .active{background:#666666;border:1px solid #666666}
+.blackStyle .submitContainer .tabBar .active:hover{background:#777777}
+.blackStyle .topUserContainer .userList .info a{color:#666;text-decoration:none}
+.blackStyle .topUserContainer .userList .info a:hover{color:#f15a24}
+.blackStyle .detailContainer .buttonWrap a.voteButton.voted{background:#FC6900;color:#f0f0f0}
+.blackStyle .detailContainer .buttonWrap a.voteButton.voted:hover{background:#FF740F;color:#f0f0f0}
+.blackStyle #menu .menu-text.active, 
+.blackStyle #menu .menu-text:hover{background-color: #F0F0F0;}
+.blackStyle .submitContainer .submitForm{border:1px solid #666666;}
+.blackStyle .profileContainer .tabBar .tabBlock .active{background:#666666}
+.blackStyle .pin-container .bottomInfo a.voteButton{background:#D8D8D8;color:#909090 !important;}
+.blackStyle .pin-container .bottomInfo a.voteButton.voted{background:#FC6900;color:#fff !important}
+.blackStyle .pin-container .bottomInfo a.voteButton.voted:hover{background:#F26700;color:#f0f0f0}
+.blackStyle #btnLoadMore{border:1px solid #333333;background:#666666}
+.blackStyle #btnLoadMore:hover{background:#999999}
+.blackStyle .detailContainer .fixedInfoPanel{background:#E5E5E5}

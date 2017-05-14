@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+RewriteBase /m
+RewriteRule ^$ home.php
+RewriteRule ^settings$ home.php
+RewriteRule ^hot$ index.php
+RewriteRule ^submit$ submit.php
+RewriteRule ^vote$ vote.php
+RewriteRule ^video$ video.php
+RewriteRule ^trending$ trending.php
+RewriteRule ^home$ home.php
+RewriteRule ^gag/([^/.]+)?/?(.*)$ view.php?pid=$1
+RewriteRule ^vui/([^/.]+)?/?(.*)$ view.php?pid=$1
+RewriteRule ^photo/([^/.]+)?/?(.*)$ view.php?pid=$1
+RewriteRule ^login$ login.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^search$ search.php
+RewriteRule ^random$ random.php
+</IfModule>
+
+<IfModule mod_security.c> 
+   # Turn off mod_security filtering. 
+   SecFilterEngine Off 
+
+   # The below probably isn't needed, 
+   # but better safe than sorry. 
+   SecFilterScanPOST Off 
+</IfModule>

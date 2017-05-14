@@ -1,0 +1,48 @@
+﻿{
+	"Rage Comic" :
+	{
+		"angry" : "Angry",
+		"determined" : "Determined",
+		"focused" : "Focused",
+		"foreveralone" : "Forever Alone",
+		"happy" : "Happy",
+		"laugh" : "Laugh",
+		"neutral" : "Neutral",
+		"pleased" : "Pleased",
+		"rage" : "Rage",
+		"sad" : "Sad",
+		"scared" : "Scared",
+		"seriously" : "Seriously?",
+		"lust" : "Sexy time",
+		"surprised" : "Surprised",
+		"troll" : "Troll",
+		"fyea" : "F*** Yea!",
+		"cereal" : "Cereal",
+		"various" : "Various",
+		"transitions" : "Transitions"
+	},
+	"Doremon Colors" :
+	{
+		"chaien" : "Chaien",
+		"doremon" : "Doremon",
+		"nobita" : "Nobita",
+		"xeko" : "Xeko",
+		"xuka" : "Xuka",
+		"nhieunhanvat" : "More characters",
+		"nhieunhanvat2" : "More characters 2",
+		"nhanvatkhac" : "Other characters"		
+	},
+	"Brown and Cony" :
+	{
+		"gaubrown" : "Brown",
+		"thocony" : "Cony",
+		"browncony" : "Brown and Cony",
+		"moon" : "Moon"
+	},
+	"Objects" :
+	{
+		"hair" : "Hair",
+		"accessories" : "Accessories",
+		"text" : "Speech Balloons"
+	}
+}

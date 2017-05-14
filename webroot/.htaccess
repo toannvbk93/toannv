@@ -1,0 +1,52 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RedirectMatch 301 /m/admin/(.*) /admin/$1
+RedirectMatch 301 /m/admin(.*) /admin$1
+#RewriteRule ^$ home.php
+RewriteRule ^api$ app_api.php
+RewriteRule ^api/$ app_api.php
+RewriteRule ^signup$ signup.php
+RewriteRule ^twitter_signup$ twitter_signup.php
+RewriteRule ^settings$ settings.php
+RewriteRule ^log_out$ log_out.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^login$ login.php
+RewriteRule ^delete-account$ delete-account.php
+RewriteRule ^confirmemail$ confirmemail.php
+RewriteRule ^submit$ submit.php
+RewriteRule ^submitfull$ submit_fullmode.php
+RewriteRule ^submithai$ submithai.php
+RewriteRule ^gui$ gui.php
+RewriteRule ^gag/([^/.]+)?/?(.*)$ view.php?pid=$1
+RewriteRule ^vui/([^/.]+)?/?(.*)$ view.php?pid=$1
+RewriteRule ^photo/([^/.]+)?/?(.*)$ view.php?pid=$1
+RewriteRule ^safe$ safe.php
+RewriteRule ^hot$ trending.php
+RewriteRule ^video$ video.php
+RewriteRule ^thumbs$ thumbs.php
+RewriteRule ^tvote$ tvote.php
+RewriteRule ^ttrending$ ttrending.php
+RewriteRule ^top-users$ topusers.php
+RewriteRule ^random$ random.php
+RewriteRule ^vote$ vote.php
+RewriteRule ^trending$ trending.php
+RewriteRule ^old$ trending.php
+RewriteRule ^channels/([^/.]+)?/?$ channels.php?cname=$1&%{QUERY_STRING}
+RewriteRule ^top?/?([^/.]+)?/?$ top.php?period=$1&%{QUERY_STRING}
+RewriteRule ^fix/(.*) fix.php?pid=$1
+RewriteRule ^search$ search.php
+RewriteRule ^fast$ fast.php
+RewriteRule ^user/([^/.]+)?/likes?/?$ likes.php?uid=$1&%{QUERY_STRING}
+RewriteRule ^user/([^/.]+)?/messages$ messages.php?uid=$1&%{QUERY_STRING}
+RewriteRule ^user/([^/.]+)?$ user.php?uid=$1&%{QUERY_STRING}
+RewriteRule ^faq$ faq.php
+RewriteRule ^terms_of_service$ terms_of_service.php
+RewriteRule ^privacy_policy$ privacy_policy.php
+RewriteRule ^about$ about.php
+RewriteRule ^event$ event.php
+RewriteRule ^rules$ rules.php
+RewriteRule ^contact$ contact.php
+RewriteRule ^rss$ rss.php
+ErrorDocument 404 /index.php
+</IfModule>
