@@ -1,32 +1,32 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 17:24:07
-         compiled from administrator/members_create.tpl */ ?>
+<?php /* Smarty version 2.6.6, created on 2017-05-14 17:20:52
+         compiled from administrator/ch_create.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashes', 'administrator/members_create.tpl', 62, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashes', 'administrator/ch_create.tpl', 62, false),)), $this); ?>
 		<div class="middle" id="anchor-content">
             <div id="page:main-container">
 				<div class="columns ">
                 
 					<div class="side-col" id="page:left">
-    					<h3>Thành Viên</h3>
+    					<h3>Kênh</h3>
 						
                         <ul id="isoft" class="tabs">
     						<li >
-        						<a href="members_manage.php" id="isoft_group_1" name="group_1" title="Quản Lý Thành Viên" class="tab-item-link ">
+        						<a href="ch_manage.php" id="isoft_group_1" name="group_1" title="Danh Sách Kênh" class="tab-item-link ">
                                     <span>
                                         <span class="changed" title=""></span>
                                         <span class="error" title=""></span>
-                                        Quản Lý Thành Viên
+                                        Danh Sách Kênh
                                     </span>
         						</a>
                                 <div id="isoft_group_1_content" style="display:none;"></div>
     						</li>
                             
                             <li >
-                                <a href="members_create.php" id="isoft_group_2" name="group_2" title="Tạo Thành Viên" class="tab-item-link">
+                                <a href="ch_create.php" id="isoft_group_2" name="group_2" title="Tạo Kênh" class="tab-item-link">
                                 	<span>
                                     	<span class="changed" title=""></span>
                                         <span class="error" title=""></span>
-                                        Tạo Thành Viên
+                                        Tạo Kênh
                                     </span>
                                 </a>
                                 
@@ -50,7 +50,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
                                 <div id="isoft_group_2_content" style="display:none;">
                                 	<div class="entry-edit">
                                         <div class="entry-edit-head">
-                                            <h4 class="icon-head head-edit-form fieldset-legend">Tạo Thành Viên</h4>
+                                            <h4 class="icon-head head-edit-form fieldset-legend">Tạo Kênh</h4>
                                             <div class="form-buttons">
 
                                             </div>
@@ -61,30 +61,12 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
                                             	<table cellspacing="0" class="form-list">
                                                 <tbody>
                                                 	<tr class="hidden">
-                                                        <td class="label"><label for="name">Tên đăng nhập </label></td>
+                                                        <td class="label"><label for="name">Tên kênh </label></td>
                                                         <td class="value">
-                                                        	<input id="username" name="username" value="<?php echo ((is_array($_tmp=$_REQUEST['username'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)); ?>
+                                                        	<input id="cname" name="cname" value="<?php echo ((is_array($_tmp=$_REQUEST['cname'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)); ?>
 " class=" required-entry required-entry input-text" type="text"/>
                                                         </td>
-                                                        <td class="scope-label">[TÊN ĐĂNG NHẬP CỦA THÀNH VIÊN]</td>
-                                                            <td><small></small></td>
-                                                    </tr>
-                                                	<tr class="hidden">
-                                                        <td class="label"><label for="name">Mật khẩu </label></td>
-                                                        <td class="value">
-                                                        	<input id="password" name="password" value="<?php echo ((is_array($_tmp=$_REQUEST['password'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)); ?>
-" class=" required-entry required-entry input-text" type="text"/>
-                                                        </td>
-                                                        <td class="scope-label">[MẬT KHẨU CỦA THÀNH VIÊN]</td>
-                                                            <td><small></small></td>
-                                                    </tr>
-                                                    <tr class="hidden">
-                                                        <td class="label"><label for="name">E-Mail </label></td>
-                                                        <td class="value">
-                                                        	<input id="email" name="email" value="<?php echo ((is_array($_tmp=$_REQUEST['email'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)); ?>
-" class=" required-entry required-entry input-text" type="text"/>
-                                                        </td>
-                                                        <td class="scope-label">[ĐỊA CHỈ E-MAIL CỦA THÀNH VIÊN]</td>
+                                                        <td class="scope-label">[TÊN KÊNH MUỐN TẠO]</td>
                                                             <td><small></small></td>
                                                     </tr>
                                                 </tbody>
@@ -118,20 +100,8 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
                                 
                                 
                                 
-                                
                             </li>
-							
-							<li >
-        						<a href="members_newsletter.php" id="isoft_group_4" name="group_4" title="Gửi Thư" class="tab-item-link ">
-                                    <span>
-                                        <span class="changed" title=""></span>
-                                        <span class="error" title=""></span>
-                                        Gửi Thư
-                                    </span>
-        						</a>
-                                <div id="isoft_group_4_content" style="display:none;"></div>
-    						</li>
-							
+    
 						</ul>
                         
 						<script type="text/javascript">
@@ -153,13 +123,13 @@ unset($_smarty_tpl_vars);
                             </div>
 
                             <div class="content-header">
-                               <h3 class="icon-head head-products">Thành Viên - Tạo Thành Viên</h3>
+                               <h3 class="icon-head head-products">Kênh - Tạo Kênh</h3>
                                <p class="content-buttons form-buttons">
                                     <button  id="id_be616be1324d8ae4516f276d17d34b9c" type="button" class="scalable save" onclick="document.main_form.submit();" style=""><span>Xác Nhận</span></button>			
                                 </p>
                             </div>
                             
-                            <form action="members_create.php" method="post" id="main_form" name="main_form" enctype="multipart/form-data">
+                            <form action="ch_create.php" method="post" id="main_form" name="main_form" enctype="multipart/form-data">
                             	<input type="hidden" id="submitform" name="submitform" value="1" >
                             	<div style="display:none"></div>
                             </form>

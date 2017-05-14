@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2014-12-23 03:45:15
+<?php /* Smarty version 2.6.6, created on 2017-05-14 17:41:22
          compiled from administrator/ads_preview.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'get_advertisement', 'administrator/ads_preview.tpl', 46, false),)), $this); ?>

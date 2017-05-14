@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 10:13:55
+<?php /* Smarty version 2.6.6, created on 2017-05-14 18:00:27
          compiled from administrator/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashes', 'administrator/index.tpl', 39, false),)), $this); ?>
@@ -39,8 +39,8 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
                     <div id="messages">
                     	<?php if ($this->_tpl_vars['error'] != ""): ?>
                         <ul class="messages"><li class="error-msg"><ul><li><?php echo $this->_tpl_vars['error']; ?>
-</li></ul></li></ul> 
-                        <?php endif; ?>                   
+</li></ul></li></ul>
+                        <?php endif; ?>
                     </div>
                     <div class="input-box input-left"><label for="username">Tên Đăng Nhập:</label><br/>
                         <input type="text" id="username" name="username" value="" class="required-entry input-text"/></div>
@@ -55,11 +55,11 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
                         <input onclick="loginForm.submit()" type="submit" name="login" id="login" class="form-button" src="<?php echo $this->_tpl_vars['adminurl']; ?>
 /images/btn_login.gif" value="Đăng Nhập"/></div>
                 </fieldset>
-                <p class="legal">Powered Codehaivl.com</p>
+                <p class="legal">Powered Toannv</p>
 				<input type="hidden" name="login" value="Login" />
             </form>
             <div class="bottom"></div>
         </div>
     </div>
 </body>
-</html>
+</html>

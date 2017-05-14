@@ -26,8 +26,8 @@
                     <h2>Đăng Nhập Quản Trị Viên</h2>
                     <div id="messages">
                     	{if $error ne ""}
-                        <ul class="messages"><li class="error-msg"><ul><li>{$error}</li></ul></li></ul> 
-                        {/if}                   
+                        <ul class="messages"><li class="error-msg"><ul><li>{$error}</li></ul></li></ul>
+                        {/if}
                     </div>
                     <div class="input-box input-left"><label for="username">Tên Đăng Nhập:</label><br/>
                         <input type="text" id="username" name="username" value="" class="required-entry input-text"/></div>
@@ -39,7 +39,7 @@
                         <a class="left" href="{$baseurl}">[ Quay Lại {$site_name|stripslashes} ]</a>
                         <input onclick="loginForm.submit()" type="submit" name="login" id="login" class="form-button" src="{$adminurl}/images/btn_login.gif" value="Đăng Nhập"/></div>
                 </fieldset>
-                <p class="legal">Powered Codehaivl.com</p>
+                <p class="legal">Powered Toannv</p>
 				<input type="hidden" name="login" value="Login" />
             </form>
             <div class="bottom"></div>

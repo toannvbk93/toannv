@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2014-12-23 03:44:48
+<?php /* Smarty version 2.6.6, created on 2017-05-14 17:41:08
          compiled from administrator/ads_code.tpl */ ?>
 		<div class="middle" id="anchor-content">
             <div id="page:main-container">

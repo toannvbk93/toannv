@@ -3,13 +3,13 @@
 include("../include/config.php");
 include_once("../include/functions/import.php");
 verify_login_admin();
-
-if($_POST['submitform'] == "1")
+$error = "";
+if(isset($_POST['submitform']) && $_POST['submitform'] == "1")
 {
 	$details = $_POST[details];
 	$adcode = $_POST[maqc];
 	$active = intval($_POST[active]);
-	
+
 	if($details == "")
 	{
 		$error = "Error: Please enter a description.";
