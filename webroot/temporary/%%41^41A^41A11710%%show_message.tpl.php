@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 17:41:30
+<?php /* Smarty version 2.6.6, created on 2017-05-15 16:03:59
          compiled from administrator/show_message.tpl */ ?>
 <?php if ($this->_tpl_vars['error'] != ""): ?>
 								<ul class="messages">

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2015-01-12 14:49:53
+<?php /* Smarty version 2.6.6, created on 2017-05-15 15:22:08
          compiled from administrator/bans_ip_add.tpl */ ?>
 		<div class="middle" id="anchor-content">
             <div id="page:main-container">

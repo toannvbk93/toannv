@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 10:02:44
+<?php /* Smarty version 2.6.6, created on 2017-05-15 16:10:20
          compiled from right.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'get_advertisement', 'right.tpl', 4, false),array('insert', 'get_member_profilepicture', 'right.tpl', 10, false),array('modifier', 'stripslashes', 'right.tpl', 9, false),array('modifier', 'truncate', 'right.tpl', 112, false),)), $this); ?>

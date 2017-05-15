@@ -1,5 +1,4 @@
 <?php
-
 include("include/config.php");
 include("include/functions/import.php");
 $thebaseurl     = $config['baseurl'];
@@ -10,7 +9,7 @@ if(isset($_SESSION['USERID'])){
 else {
   $SID = "";
 }
-if ($_SESSION['viewtype'] == "" && $_REQUEST['view'] == "") {
+if (isset($_SESSION['viewtype']) && isset($_REQUEST['view']) && $_SESSION['viewtype'] == "" && $_REQUEST['view'] == "") {
     $_SESSION['viewtype'] = "list";
 } else{
   if(isset($_REQUEST['view'] )){

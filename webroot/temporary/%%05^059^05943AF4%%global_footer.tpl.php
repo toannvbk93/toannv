@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 18:00:33
+<?php /* Smarty version 2.6.6, created on 2017-05-15 16:03:59
          compiled from administrator/global_footer.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashes', 'administrator/global_footer.tpl', 7, false),)), $this); ?>

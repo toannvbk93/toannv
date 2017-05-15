@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 17:21:01
+<?php /* Smarty version 2.6.6, created on 2017-05-15 15:40:39
          compiled from administrator/settings_static.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashes', 'administrator/settings_static.tpl', 56, false),array('modifier', 'htmlspecialchars', 'administrator/settings_static.tpl', 56, false),)), $this); ?>

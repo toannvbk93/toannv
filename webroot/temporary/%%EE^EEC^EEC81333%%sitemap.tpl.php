@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-03-25 13:54:08
+<?php /* Smarty version 2.6.6, created on 2017-05-15 15:40:26
          compiled from administrator/sitemap.tpl */ ?>
 		<div class="middle" id="anchor-content">
             <div id="page:main-container">

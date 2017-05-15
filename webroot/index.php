@@ -1,9 +1,7 @@
 <?php
-
 include("include/config.php");
 include("include/functions/import.php");
 $thebaseurl = $config['baseurl'];
-
 if (isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "" && $_REQUEST['view'] == "") {
     $_SESSION['viewtype'] = "list";
 } elseif (isset($_REQUEST['view']) && $_SESSION['viewtype'] == "list" && $_REQUEST['view'] == "") {
@@ -22,7 +20,6 @@ else if ($page == "") {
     $page = "1";
 }
 $currentpage = $page;
-
 if ($page >= 2) {
     $pagingstart = ($page - 1) * $config['items_per_page'];
 } else {
@@ -45,13 +42,12 @@ $totalvideos = $executequery1->fields['total'];
 //toannv
 $posts       = null;
 if ($totalvideos > 0) {
-    if ($executequery1->fields['total'] <= $config[maximum_results]) {
+    if ($executequery1->fields['total'] <= $config['maximum_results']) {
         $total = $executequery1->fields['total'];
     } else {
-        $total = $config[maximum_results];
+        $total = $config['maximum_results'];
     }
-
-    $toppage = ceil($total / $config[items_per_page]);
+    $toppage = ceil($total / $config['items_per_page']);
     if ($toppage == 0) {
         $xpage = $toppage + 1;
     } else {
@@ -60,8 +56,7 @@ if ($totalvideos > 0) {
 
     $executequery2 = $conn->Execute($query2);
     $posts         = $executequery2->getrows();
-
-    $queryvr        = "SELECT A.*, B.username FROM posts A, members B WHERE A.USERID=B.USERID AND A.PID!='" . mysql_real_escape_string($pid) . "' AND A.active='1' AND A.phase='0' ORDER BY A.PID desc limit 3";
+    @$queryvr        = "SELECT A.*, B.username FROM posts A, members B WHERE A.USERID=B.USERID AND A.PID!='" . mysql_real_escape_string($pid) . "' AND A.active='1' AND A.phase='0' ORDER BY A.PID desc limit 3";
     $executequeryvr = $conn->execute($queryvr);
     $vr             = $executequeryvr->getarray();
     STemplate::assign('vr', $vr);
@@ -73,7 +68,7 @@ if ($totalvideos > 0) {
 
         $addthis = "AND A.time_added>=" . $utime;
 
-        $queryr = "SELECT A.*, B.username FROM posts A, members B WHERE A.USERID=B.USERID AND A.PID!='" . mysql_real_escape_string($pid) . "' AND A.active='1' AND A.youtube_key='' AND A.fod_key='' AND A.vfy_key='' AND A.vmo_key='' $addthis ORDER BY A.view desc limit 5";
+        @$queryr = "SELECT A.*, B.username FROM posts A, members B WHERE A.USERID=B.USERID AND A.PID!='" . mysql_real_escape_string($pid) . "' AND A.active='1' AND A.youtube_key='' AND A.fod_key='' AND A.vfy_key='' AND A.vmo_key='' $addthis ORDER BY A.view desc limit 5";
 
         $executequeryr = $conn->execute($queryr);
         $r             = $executequeryr->getarray();

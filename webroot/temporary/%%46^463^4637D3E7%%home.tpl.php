@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 18:00:27
+<?php /* Smarty version 2.6.6, created on 2017-05-15 16:01:30
          compiled from administrator/home.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'get_total_v1', 'administrator/home.tpl', 38, false),array('insert', 'get_total_v2', 'administrator/home.tpl', 42, false),array('insert', 'get_total_v4', 'administrator/home.tpl', 46, false),array('insert', 'get_total_v5', 'administrator/home.tpl', 50, false),array('insert', 'get_total_com', 'administrator/home.tpl', 77, false),array('insert', 'get_total_m3', 'administrator/home.tpl', 101, false),array('modifier', 'stripslashes', 'administrator/home.tpl', 128, false),array('modifier', 'truncate', 'administrator/home.tpl', 128, false),)), $this); ?>

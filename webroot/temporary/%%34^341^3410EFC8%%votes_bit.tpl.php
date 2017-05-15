@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 06:49:22
+<?php /* Smarty version 2.6.6, created on 2017-05-15 16:00:59
          compiled from votes_bit.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'votes_bit.tpl', 1, false),array('modifier', 'stripslashes', 'votes_bit.tpl', 1, false),array('modifier', 'truncate', 'votes_bit.tpl', 1, false),array('insert', 'return_youtube2', 'votes_bit.tpl', 23, false),array('insert', 'return_fod2', 'votes_bit.tpl', 28, false),array('insert', 'return_vfy2', 'votes_bit.tpl', 31, false),array('insert', 'return_vmo2', 'votes_bit.tpl', 33, false),array('insert', 'get_time_to_days_ago', 'votes_bit.tpl', 52, false),array('insert', 'get_fav_count', 'votes_bit.tpl', 63, false),array('insert', 'get_fav_status', 'votes_bit.tpl', 69, false),array('insert', 'get_unfav_status', 'votes_bit.tpl', 78, false),array('insert', 'get_advertisement', 'votes_bit.tpl', 146, false),)), $this); ?>

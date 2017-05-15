@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-13 16:00:02
+<?php /* Smarty version 2.6.6, created on 2017-05-15 15:50:26
          compiled from administrator/stories_edit.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'get_all_users', 'administrator/stories_edit.tpl', 59, false),array('modifier', 'stripslashes', 'administrator/stories_edit.tpl', 61, false),array('modifier', 'date_format', 'administrator/stories_edit.tpl', 119, false),array('modifier', 'strip_mq_gpc', 'administrator/stories_edit.tpl', 201, false),)), $this); ?>
