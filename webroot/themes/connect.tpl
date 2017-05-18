@@ -15,7 +15,7 @@
 	</div>
 	<div class="content">
 		<div class="description">
-			<h2>Bạn đã đăng ký thành công. Click vào nút bên dưới để đăng nhập vào codehaivl2015.com</h2>
+			<h2>Bạn đã đăng ký thành công. Click vào nút bên dưới để đăng nhập</h2>
 		</div>
 		<a class="spcl-button facebook badge-facebook-connect" label="LoginFormFacebookButton" next="" <a class="spcl-button facebook badge-facebook-connect" label="LoginFormFacebookButton" next="" href="https://www.facebook.com/dialog/permissions.request?app_id={$FACEBOOK_APP_ID}&display=page&next={$baseurl}/&response_type=code&fbconnect=1&perms=email,user_birthday,user_about_me">{$lang25}</a><br>
 	</div>

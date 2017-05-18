@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-15 15:43:40
+<?php /* Smarty version 2.6.6, created on 2017-05-18 17:15:38
          compiled from ragecomic.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'ragecomic.tpl', 77, false),array('modifier', 'stripslashes', 'ragecomic.tpl', 96, false),array('insert', 'get_member_profilepicture', 'ragecomic.tpl', 99, false),)), $this); ?>
@@ -185,7 +185,7 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
 /channels/<?php echo ((is_array($_tmp=$this->_tpl_vars['allchannels'][$this->_sections['i']['index']]['cname'])) ? $this->_run_mod_handler('makeseo', true, $_tmp) : smarty_modifier_makeseo($_tmp)); ?>
 "><?php echo $this->_tpl_vars['allchannels'][$this->_sections['i']['index']]['cname']; ?>
 </a></li>
-                          <?php endfor; endif; ?> 
+                          <?php endfor; endif; ?>
               </ul>
             </li>
             <?php endif; ?>-->
@@ -369,7 +369,7 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_member_
             </div>
         </div>
      <div style="margin-bottom:5px;" align="center"></div>
-            
+
     </div>
 </div>
 <?php echo '

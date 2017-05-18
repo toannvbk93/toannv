@@ -14,7 +14,7 @@
 
 
  <div style="margin-bottom:5px;" align="center">    {insert name=get_advertisement AID=8}</div>
-    <div id="content-holder">        
+    <div id="content-holder">
         <div class="main-filter ">
           {if $thumbs eq "1"}
             <a id="changeview" class="view_thumbs" href="{$baseurl}/vote?view=thumbs" title="Toggle Views">{$lang258}</a>
@@ -31,21 +31,21 @@
             {/if}
             {/if}
         </div>
-        <div id="content" listPage="hot">        
-                 
-     
+        <div id="content" listPage="hot">
+
+
             <div id="entries-content" class="list">
-                <ul id="entries-content-ul" class="col-1"> 
-                    {section name=i loop=$posts}               
+                <ul id="entries-content-ul" class="col-1">
+                    {section name=i loop=$posts}
                         {include file="home_bit.tpl"}
-                    {/section}                
+                    {/section}
                 </ul>
                     <div class="view-more" id="view_more_div">
-                    <a class="next-page" id="next_page" href="#" style="display: inline;color:white;">xem thêm, còn nhiều lắm</a>
+                    <a class="next-page" id="next_page" href="#" style="display: inline;color:white;">{$lang335}</a>
                 </div>
             </div>
-  <div class="plzVoteBottom"><br><span style="color:red">Giúp</span>  codehaivl2015.com <a href="{$baseurl}/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
-            <div id="lastPostsLoader"></div>                
+  <div class="plzVoteBottom"><br><span style="color:red"> {$lang332}</span><a href="{$baseurl}/vote">{$lang333}</a>{$lang334}</div>
+            <div id="lastPostsLoader"></div>
             {if $AUTOSCROLL eq "1"}
             <div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>
             {literal}
@@ -70,17 +70,17 @@
                             }
                             $('div#lastPostsLoader').empty();
                         });
-                        
+
                         return true;
                     };
                     $(window).scroll(function(){
                         if (document.documentElement.scrollTop)
-                        { 
-                            var  curloc = document.documentElement.scrollTop; 
+                        {
+                            var  curloc = document.documentElement.scrollTop;
                         }
                         else
-                        { 
-                            var curloc=$(window).scrollTop(); 
+                        {
+                            var curloc=$(window).scrollTop();
                         }
                         if  ((curloc+document.documentElement.clientHeight+1)>=($(document).height()-400) && ajaxstart==1 ) {
                             if (tpage <= totPageLoad) {
@@ -94,7 +94,7 @@
                             }
                         };
                         if(curloc>$(window).height()){$('#backtotop').slideDown();}else{$('#backtotop').slideUp();};
-                    
+
                     });
                 });
                 </script>
@@ -110,7 +110,7 @@
                     { var curloc=$(window).scrollTop(); }
                     var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
                     var  scrolltrigger = 0.95;
-                 
+
                     // if  ((wintop/(docheight-winheight)) > scrolltrigger) {
                     //  lastAddedLiveFunc();
                     //  tpage = tpage+1;
@@ -131,8 +131,8 @@
                 {else}
                 <a href="#" onclick="return false;" class="older disabled">{$lang167} &raquo;</a>
                 {/if}
-            </div>  
-            {/if}   
+            </div>
+            {/if}
         </div>
         {literal}
         <script type="text/javascript">
@@ -144,10 +144,10 @@
         }else{
         $(this).addClass('unloved');
         if($('#post_love_'+id).hasClass('loved')){
-        ulikedeg($(this).attr('entryId'),-1,1); 
+        ulikedeg($(this).attr('entryId'),-1,1);
         $('#post_love_'+id).removeClass('loved');
         }else{
-        ulikedeg($(this).attr('entryId'),0,1);  
+        ulikedeg($(this).attr('entryId'),0,1);
         }
         }
         });
@@ -165,7 +165,7 @@
         ulikedeg($(this).attr('rel'),1,0);
         }
         }
-        });        
+        });
         function ulikedeg(p,l,u){
         jQuery.ajax({
         type:'POST',
@@ -175,11 +175,11 @@
         $('#love_count_'+p).html(e);
         }
         });
-        }        
+        }
         </script>
         {/literal}
     </div>
 </div>
 {include file='right.tpl'}
-  
+
 <div id="footer" class="">

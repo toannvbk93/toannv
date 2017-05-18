@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-15 16:10:20
+<?php /* Smarty version 2.6.6, created on 2017-05-18 17:16:38
          compiled from home.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'home.tpl', 5, false),array('modifier', 'stripslashes', 'home.tpl', 6, false),array('insert', 'get_advertisement', 'home.tpl', 16, false),)), $this); ?>
@@ -50,7 +50,7 @@ $this->_sections['f']['last']       = ($this->_sections['f']['iteration'] == $th
  <div style="margin-bottom:5px;" align="center">    <?php require_once(SMARTY_CORE_DIR . 'core.run_insert_handler.php');
 echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_advertisement', 'AID' => 8)), $this); ?>
 </div>
-    <div id="content-holder">        
+    <div id="content-holder">
         <div class="main-filter ">
           <?php if ($this->_tpl_vars['thumbs'] == '1'): ?>
             <a id="changeview" class="view_thumbs" href="<?php echo $this->_tpl_vars['baseurl']; ?>
@@ -74,11 +74,11 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_adverti
             <?php endif; ?>
             <?php endif; ?>
         </div>
-        <div id="content" listPage="hot">        
-                 
-     
+        <div id="content" listPage="hot">
+
+
             <div id="entries-content" class="list">
-                <ul id="entries-content-ul" class="col-1"> 
+                <ul id="entries-content-ul" class="col-1">
                     <?php unset($this->_sections['i']);
 $this->_sections['i']['name'] = 'i';
 $this->_sections['i']['loop'] = is_array($_loop=$this->_tpl_vars['posts']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
@@ -102,21 +102,25 @@ $this->_sections['i']['index_prev'] = $this->_sections['i']['index'] - $this->_s
 $this->_sections['i']['index_next'] = $this->_sections['i']['index'] + $this->_sections['i']['step'];
 $this->_sections['i']['first']      = ($this->_sections['i']['iteration'] == 1);
 $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $this->_sections['i']['total']);
-?>               
+?>
                         <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "home_bit.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-                    <?php endfor; endif; ?>                
+                    <?php endfor; endif; ?>
                 </ul>
                     <div class="view-more" id="view_more_div">
-                    <a class="next-page" id="next_page" href="#" style="display: inline;color:white;">xem thêm, còn nhiều lắm</a>
+                    <a class="next-page" id="next_page" href="#" style="display: inline;color:white;"><?php echo $this->_tpl_vars['lang335']; ?>
+</a>
                 </div>
             </div>
-  <div class="plzVoteBottom"><br><span style="color:red">Giúp</span>  codehaivl2015.com <a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
-            <div id="lastPostsLoader"></div>                
+  <div class="plzVoteBottom"><br><span style="color:red"> <?php echo $this->_tpl_vars['lang332']; ?>
+</span><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
+/vote"><?php echo $this->_tpl_vars['lang333']; ?>
+</a><?php echo $this->_tpl_vars['lang334']; ?>
+</div>
+            <div id="lastPostsLoader"></div>
             <?php if ($this->_tpl_vars['AUTOSCROLL'] == '1'): ?>
             <div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>
             <?php echo '
@@ -141,17 +145,17 @@ unset($_smarty_tpl_vars);
                             }
                             $(\'div#lastPostsLoader\').empty();
                         });
-                        
+
                         return true;
                     };
                     $(window).scroll(function(){
                         if (document.documentElement.scrollTop)
-                        { 
-                            var  curloc = document.documentElement.scrollTop; 
+                        {
+                            var  curloc = document.documentElement.scrollTop;
                         }
                         else
-                        { 
-                            var curloc=$(window).scrollTop(); 
+                        {
+                            var curloc=$(window).scrollTop();
                         }
                         if  ((curloc+document.documentElement.clientHeight+1)>=($(document).height()-400) && ajaxstart==1 ) {
                             if (tpage <= totPageLoad) {
@@ -165,7 +169,7 @@ unset($_smarty_tpl_vars);
                             }
                         };
                         if(curloc>$(window).height()){$(\'#backtotop\').slideDown();}else{$(\'#backtotop\').slideUp();};
-                    
+
                     });
                 });
                 </script>
@@ -182,7 +186,7 @@ unset($_smarty_tpl_vars);
                     { var curloc=$(window).scrollTop(); }
                     var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
                     var  scrolltrigger = 0.95;
-                 
+
                     // if  ((wintop/(docheight-winheight)) > scrolltrigger) {
                     //  lastAddedLiveFunc();
                     //  tpage = tpage+1;
@@ -212,8 +216,8 @@ unset($_smarty_tpl_vars);
                 <a href="#" onclick="return false;" class="older disabled"><?php echo $this->_tpl_vars['lang167']; ?>
  &raquo;</a>
                 <?php endif; ?>
-            </div>  
-            <?php endif; ?>   
+            </div>
+            <?php endif; ?>
         </div>
         <?php echo '
         <script type="text/javascript">
@@ -225,10 +229,10 @@ unset($_smarty_tpl_vars);
         }else{
         $(this).addClass(\'unloved\');
         if($(\'#post_love_\'+id).hasClass(\'loved\')){
-        ulikedeg($(this).attr(\'entryId\'),-1,1); 
+        ulikedeg($(this).attr(\'entryId\'),-1,1);
         $(\'#post_love_\'+id).removeClass(\'loved\');
         }else{
-        ulikedeg($(this).attr(\'entryId\'),0,1);  
+        ulikedeg($(this).attr(\'entryId\'),0,1);
         }
         }
         });
@@ -246,7 +250,7 @@ unset($_smarty_tpl_vars);
         ulikedeg($(this).attr(\'rel\'),1,0);
         }
         }
-        });        
+        });
         function ulikedeg(p,l,u){
         jQuery.ajax({
         type:\'POST\',
@@ -256,7 +260,7 @@ unset($_smarty_tpl_vars);
         $(\'#love_count_\'+p).html(e);
         }
         });
-        }        
+        }
         </script>
         '; ?>
 
@@ -267,5 +271,5 @@ $this->_smarty_include(array('smarty_include_tpl_file' => 'right.tpl', 'smarty_i
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-  
+
 <div id="footer" class="">

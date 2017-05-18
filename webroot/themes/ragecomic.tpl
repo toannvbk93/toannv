@@ -84,7 +84,7 @@
               <ul>
                 {section name=i loop=$allchannels}
                           <li><a href="{$baseurl}/channels/{$allchannels[i].cname|makeseo}">{$allchannels[i].cname}</a></li>
-                          {/section} 
+                          {/section}
               </ul>
             </li>
             {/if}-->
@@ -211,7 +211,7 @@
             </div>
         </div>
      <div style="margin-bottom:5px;" align="center"></div>
-            
+
     </div>
 </div>
 {literal}

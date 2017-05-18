@@ -31,18 +31,18 @@
 		<a href="{$baseurl}/" id="logo">{$site_name}</a>
 	    <ul id="menuBar" class="main-menu" style="overflow:visible">
 
-            <li><a href="{$baseurl}/">Mới</a>
+            <li><a href="{$baseurl}/">{$lang336}</a>
             </li>
-            <li><a href="{$baseurl}/vote">Bình chọn</a>
+            <li><a href="{$baseurl}/vote">{$lang337}</a>
             </li>
-            <li><a href="{$baseurl}/video">Video</a>
+            <li><a href="{$baseurl}/video">{$lang338}</a>
             </li>
-            <li><a href="{$baseurl}/hot">Hot</a> </li>
-            <li><a class="current">Chế ảnh</a>
+            <li><a href="{$baseurl}/hot">{$lang339}</a> </li>
+            <li><a class="current">{$lang340}</a>
                 <ul>
                     <li><a href="{$baseurl}/comic">Chế Comic</a>
                     </li>
-                
+
                 </ul>
             </li>
             {if $allchannels} {section name=i loop=$allchannels}
@@ -56,7 +56,7 @@
               <ul>
                 {section name=i loop=$allchannels}
                           <li><a href="{$baseurl}/channels/{$allchannels[i].cname|makeseo}">{$allchannels[i].cname}</a></li>
-                          {/section} 
+                          {/section}
               </ul>
             </li>
             {/if}-->
@@ -115,21 +115,21 @@ $('.searchButton').click(function(){
 				<option value="72">72</option>
 				<option value="144">144</option>
 				</select>
-				
+
 				<p>{$lang320}</p>
 				<input type='text' id="custom" value="#ffffff" />
-				
+
 				<p>{$lang321}</p>
 				<input type='text' id="strokesel" value="#000000" />
 				<hr />
-				
+
 				<p>{$lang322}</p>
 				<textarea id="tc1">{$lang324}</textarea>
 				<p>
 					<button type="button" class="btn btn-success" id="cap1">{$lang326}</button>
 					<button type="button" class="btn btn-danger" id="rcap1">{$lang327}</button>
 				</p>
-				
+
 				<p>{$lang323}<p>
 				<textarea id="tc2">{$lang325}</textarea>
 				<p>

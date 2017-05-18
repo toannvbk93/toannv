@@ -343,5 +343,25 @@ $lang['328'] =  "Hoàn thành";
 $lang['329'] =  "Chế ảnh tại";
 $lang['330'] =  "Event";
 $lang['331'] =  "Cũ mà hay";
+$lang['332'] =  "Giúp admin ";
+$lang['333'] =  "bình chọn ảnh ";
+$lang['334'] =  "để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé";
+$lang['335'] = "xem thêm, còn nhiều lắm";
+$lang['336'] = "MỚI";
+$lang['337'] = "BÌNH CHỌN";
+$lang['338'] = "VIDEO";
+$lang['339'] = "HOT";
+$lang['340'] = "CHẾ ẢNH";
+$lang['341'] = "TÌM KIẾM";
+$lang['342'] = "ĐĂNG ẢNH";
+$lang['343'] = "Tin nhắn";
+$lang['344'] = "Khung soạn thảo đầy đủ";
+$lang['345'] = "Tự Làm";
+$lang['346'] = "Chế ảnh";
+$lang['347'] = "Số bài cho phép trong ngày";
+$lang['348'] = "Copy và dán link ảnh tại đây";
+$lang['349'] = "Nội dung";
+$lang['350'] = "Khung soạn thảo nhanh";
+
 
 ?>

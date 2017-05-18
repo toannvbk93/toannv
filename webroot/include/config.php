@@ -169,6 +169,7 @@ if ($_SESSION['language'] == "ar")
 elseif ($_SESSION['language'] == "en")
 {
 	include("lang/en.php");
+  //toannv
 }
 elseif ($_SESSION['language'] == "vi")
 {

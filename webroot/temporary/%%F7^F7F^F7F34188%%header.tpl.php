@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-15 16:10:20
+<?php /* Smarty version 2.6.6, created on 2017-05-18 17:16:50
          compiled from header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'header.tpl', 135, false),array('modifier', 'stripslashes', 'header.tpl', 165, false),array('insert', 'get_member_profilepicture', 'header.tpl', 164, false),)), $this); ?>
@@ -179,18 +179,23 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', '
             <ul id="nav" class="main-menu" style="overflow:visible">
 
                 <li><a class="<?php if ($this->_tpl_vars['menu'] == 1): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/">Mới</a>
+/"><?php echo $this->_tpl_vars['lang336']; ?>
+</a>
                 </li>
                 <li><a class="<?php if ($this->_tpl_vars['menu'] == 3): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/vote">Bình chọn</a>
+/vote"><?php echo $this->_tpl_vars['lang337']; ?>
+</a>
                 </li>
                 <li><a class="<?php if ($this->_tpl_vars['menu'] == 4): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/video">Video</a>
+/video"><?php echo $this->_tpl_vars['lang338']; ?>
+</a>
                 </li>
                 <li><a class="<?php if ($this->_tpl_vars['menu'] == 2): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/hot">Hot</a> </li>
+/hot"><?php echo $this->_tpl_vars['lang339']; ?>
+</a> </li>
                 <li><a class="<?php if ($this->_tpl_vars['menu'] == 2): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/comic">chế ảnh</a> </li>
+/comic"><?php echo $this->_tpl_vars['lang340']; ?>
+</a> </li>
                 <?php if ($this->_tpl_vars['allchannels']): ?> <?php unset($this->_sections['i']);
 $this->_sections['i']['name'] = 'i';
 $this->_sections['i']['loop'] = is_array($_loop=$this->_tpl_vars['allchannels']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
@@ -222,7 +227,8 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
                 </li>
                 <?php endfor; endif; ?> <?php endif; ?>
                 <li><a class="<?php if ($this->_tpl_vars['menu'] == 6): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/search"><strong>Tìm kiếm</strong></a>
+/search"><strong><?php echo $this->_tpl_vars['lang341']; ?>
+</strong></a>
                 </li>
                 <!--<?php if ($this->_tpl_vars['allchannels']): ?>
                 <li><a class="<?php if ($this->_tpl_vars['menu'] == 5): ?>current<?php endif; ?>">Kênh HOT</a>
@@ -260,7 +266,8 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
                 </li>
                 <?php endif; ?>-->
                 <li><a class="post-button upload <?php if ($this->_tpl_vars['menu'] == 7): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/submit" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Đăng ảnh</a>
+/submit" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);"> <?php echo $this->_tpl_vars['lang342']; ?>
+</a>
                 </li>
             </ul>
             <ul class="main-2-menu">
@@ -299,7 +306,8 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_member_
                             </li>
                             <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
 /user/<?php echo ((is_array($_tmp=$_SESSION['USERID'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)); ?>
-/messages">Tin nhắn</a>
+/messages"><?php echo $this->_tpl_vars['lang343']; ?>
+</a>
                             </li>
                             <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
 /settings"><?php echo $this->_tpl_vars['lang45']; ?>

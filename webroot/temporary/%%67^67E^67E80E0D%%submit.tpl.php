@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-14 09:42:05
+<?php /* Smarty version 2.6.6, created on 2017-05-18 16:24:42
          compiled from submit.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashes', 'submit.tpl', 36, false),)), $this); ?>
@@ -12,7 +12,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
 <div id="main">
     <div id="content-holder">
         <div id="b9gcs-soft-post" class="b9gcs-soft-box static">
-        
+
             <div class="head">
                 <ul class="switch">
                 	<li class="tab_photo current"><a class="photo" href="<?php echo $this->_tpl_vars['baseurl']; ?>
@@ -25,7 +25,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
 					<?php endif; ?>
                 </ul>
             </div>
-        
+
             <div class="content form_photo">
                 <form id="form-b9gcs-soft-post-image" class="modal" action="<?php echo $this->_tpl_vars['baseurl']; ?>
 /submit<?php if ($_REQUEST['file'] == '1'): ?>?file=1<?php endif; ?>" enctype="multipart/form-data" method="post">
@@ -37,7 +37,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
                     <div class="field">
                         <label>
                             <h4><?php echo $this->_tpl_vars['lang103']; ?>
-</h4>                            
+</h4>
                             <input id="photo_file_upload" class="file text " type="file" name="image" style="display:block;"></input>
                         </label>
                     	<p class="info"><a class="upload_photo" href="<?php echo $this->_tpl_vars['baseurl']; ?>
@@ -49,9 +49,10 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'stripslashe
                     <div class="field">
                         <label>
                             <h4><?php echo $this->_tpl_vars['lang104']; ?>
-</h4>                        
+</h4>
                             <input id="photo_post_url" type="text" class="text" name="url" value="<?php echo ((is_array($_tmp=$this->_tpl_vars['url'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)); ?>
-" style="display:block;" placeholder="Copy và dán link ảnh tại đây"></input>
+" style="display:block;" placeholder="<?php echo $this->_tpl_vars['lang348']; ?>
+"></input>
                         </label>
                         <p class="info"><a class="upload_photo" href="<?php echo $this->_tpl_vars['baseurl']; ?>
 /submit?file=1"><strong><?php echo $this->_tpl_vars['lang105']; ?>
@@ -98,19 +99,19 @@ $this->_sections['i']['index_prev'] = $this->_sections['i']['index'] - $this->_s
 $this->_sections['i']['index_next'] = $this->_sections['i']['index'] + $this->_sections['i']['step'];
 $this->_sections['i']['first']      = ($this->_sections['i']['iteration'] == 1);
 $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $this->_sections['i']['total']);
-?>                  
+?>
                             <option value="<?php echo $this->_tpl_vars['c'][$this->_sections['i']['index']]['CID']; ?>
 "><?php echo $this->_tpl_vars['c'][$this->_sections['i']['index']]['cname']; ?>
 </option>
 							<?php endfor; endif; ?>
-                            </select>                        
+                            </select>
 							<p class="info" style="visibility:hidden"><?php echo $this->_tpl_vars['lang271']; ?>
 </p>
                         </label>
                     </div>
-                    
-            
-                 
+
+
+
                     <hr />
 					<?php if ($this->_tpl_vars['safemode'] == '1'): ?>
                     <div class="field checkbox">
@@ -121,14 +122,15 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
 					<?php endif; ?>
                 </form>
             </div>
-        
-        
+
+
             <div class="actions">
                 <ul class="buttons">
                     <li class="loading-btn" style="visibility:hidden"><a class="button loading"></a></li>
-                   
+
                        <li class="form-btn"><a class="cancel" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/submitfull?file=1" >Khung soạn thảo đầy đủ</a></li>
+/submitfull?file=1" ><?php echo $this->_tpl_vars['lang344']; ?>
+</a></li>
                     <li class="form-btn"><a class="button send" id="ekle" ><?php echo $this->_tpl_vars['lang120']; ?>
 </a></li>
                 </ul>
@@ -160,7 +162,8 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
     <div class="msg-box notice">
     	<h3><?php echo $this->_tpl_vars['lang121']; ?>
 </h3>
-    	<p>Số bài cho phép trong ngày:<?php echo $this->_tpl_vars['quota']; ?>
+    	<p><?php echo $this->_tpl_vars['lang347']; ?>
+:<?php echo $this->_tpl_vars['quota']; ?>
 </p>
     </div>
 
@@ -180,8 +183,8 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
 </b></li>
             <li><b><?php echo $this->_tpl_vars['lang130']; ?>
 </b></li>
-          
-                                    
+
+
         </ol>
         <p class="memo"><b><?php echo $this->_tpl_vars['lang136']; ?>
 </b><br> <?php echo $this->_tpl_vars['lang137']; ?>

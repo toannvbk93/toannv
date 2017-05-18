@@ -123,19 +123,19 @@
             <h1><a href="{$baseurl}/">{$site_name}</a></h1>
             <ul id="nav" class="main-menu" style="overflow:visible">
 
-                <li><a class="{if $menu eq 1}current{/if}" href="{$baseurl}/">Mới</a>
+                <li><a class="{if $menu eq 1}current{/if}" href="{$baseurl}/">{$lang336}</a>
                 </li>
-                <li><a class="{if $menu eq 3}current{/if}" href="{$baseurl}/vote">Bình chọn</a>
+                <li><a class="{if $menu eq 3}current{/if}" href="{$baseurl}/vote">{$lang337}</a>
                 </li>
-                <li><a class="{if $menu eq 4}current{/if}" href="{$baseurl}/video">Video</a>
+                <li><a class="{if $menu eq 4}current{/if}" href="{$baseurl}/video">{$lang338}</a>
                 </li>
-                <li><a class="{if $menu eq 2}current{/if}" href="{$baseurl}/hot">Hot</a> </li>
-                <li><a class="{if $menu eq 2}current{/if}" href="{$baseurl}/comic">chế ảnh</a> </li>
+                <li><a class="{if $menu eq 2}current{/if}" href="{$baseurl}/hot">{$lang339}</a> </li>
+                <li><a class="{if $menu eq 2}current{/if}" href="{$baseurl}/comic">{$lang340}</a> </li>
                 {if $allchannels} {section name=i loop=$allchannels}
                 <li><a class="{if $menu eq 5}current{/if}" href="{$baseurl}/channels/{$allchannels[i].cname|makeseo}">{$allchannels[i].cname}</a>
                 </li>
                 {/section} {/if}
-                <li><a class="{if $menu eq 6}current{/if}" href="{$baseurl}/search"><strong>Tìm kiếm</strong></a>
+                <li><a class="{if $menu eq 6}current{/if}" href="{$baseurl}/search"><strong>{$lang341}</strong></a>
                 </li>
                 <!--{if $allchannels}
                 <li><a class="{if $menu eq 5}current{/if}">Kênh HOT</a>
@@ -146,7 +146,7 @@
                   </ul>
                 </li>
                 {/if}-->
-                <li><a class="post-button upload {if $menu eq 7}current{/if}" href="{$baseurl}/submit" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Đăng ảnh</a>
+                <li><a class="post-button upload {if $menu eq 7}current{/if}" href="{$baseurl}/submit" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);"> {$lang342}</a>
                 </li>
             </ul>
             <ul class="main-2-menu">
@@ -169,7 +169,7 @@
                             </li>
                             <li><a href="{$baseurl}/user/{$smarty.session.USERID|stripslashes}/likes">{$lang193}</a>
                             </li>
-                            <li><a href="{$baseurl}/user/{$smarty.session.USERID|stripslashes}/messages">Tin nhắn</a>
+                            <li><a href="{$baseurl}/user/{$smarty.session.USERID|stripslashes}/messages">{$lang343}</a>
                             </li>
                             <li><a href="{$baseurl}/settings">{$lang45}</a>
                             </li>
