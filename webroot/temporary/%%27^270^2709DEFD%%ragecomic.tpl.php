@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-18 17:15:38
+<?php /* Smarty version 2.6.6, created on 2017-05-19 19:09:15
          compiled from ragecomic.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'ragecomic.tpl', 77, false),array('modifier', 'stripslashes', 'ragecomic.tpl', 96, false),array('insert', 'get_member_profilepicture', 'ragecomic.tpl', 99, false),)), $this); ?>
@@ -98,26 +98,34 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', '
         <ul id="menuBar" class="main-menu" style="overflow:visible">
 
             <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/">Mới</a>
+/"><?php echo $this->_tpl_vars['lang336']; ?>
+</a>
             </li>
             <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/vote">Bình chọn</a>
+/vote"><?php echo $this->_tpl_vars['lang337']; ?>
+</a>
             </li>
             <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/video">Video</a>
+/video"><?php echo $this->_tpl_vars['lang338']; ?>
+</a>
             </li>
             <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/hot">Hot</a> </li>
-            <li><a class="current">Chế ảnh</a>
+/hot"><?php echo $this->_tpl_vars['lang339']; ?>
+</a> </li>
+            <li><a class="current"><?php echo $this->_tpl_vars['lang340']; ?>
+</a>
                 <ul>
                     <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/comic">Chế Comic</a>
+/comic"><?php echo $this->_tpl_vars['lang351']; ?>
+</a>
                     </li>
                     <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/meme">Chế Meme</a>
+/meme"><?php echo $this->_tpl_vars['lang352']; ?>
+</a>
                     </li>
                     <li><a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/chetin">Chế tin nhắn</a>
+/chetin"><?php echo $this->_tpl_vars['lang353']; ?>
+</a>
                     </li>
                 </ul>
             </li>
@@ -152,7 +160,8 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
             </li>
             <?php endfor; endif; ?> <?php endif; ?>
             <li><a class="<?php if ($this->_tpl_vars['menu'] == 6): ?>current<?php endif; ?>" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/search"><strong>Tìm kiếm</strong></a>
+/search"><strong><?php echo $this->_tpl_vars['lang341']; ?>
+</strong></a>
             </li>
             <!--<?php if ($this->_tpl_vars['allchannels']): ?>
             <li><a class="<?php if ($this->_tpl_vars['menu'] == 5): ?>current<?php endif; ?>">Kênh HOT</a>

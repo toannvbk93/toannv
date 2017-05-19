@@ -15,7 +15,7 @@
  <div style="margin-bottom:5px;" align="center">    {insert name=get_advertisement AID=8}</div>
     <div id="content-holder">
         <div class="main-filter ">
-          <h1 style="margin-left:15px;margin-top: 10px;">Bình chọn ảnh để xuất hiện ở trang chủ</h1>
+          <h1 style="margin-left:15px;margin-top: 10px;">{$lang355}</h1>
             {if $thumbs eq "1"}
             <a id="changeview" class="view_thumbs" href="{$baseurl}/vote?view=thumbs" title="Toggle Views">{$lang258}</a>
             {/if}
@@ -35,21 +35,20 @@
 <div id="use-tips">
                 <div class="list-tips" id="view-info">
                     <div style="display:none" id="shortcut-event-label">Tip-Press-2</div>
-                    <span><b>Mẹo</b>: Ai cũng có thể đăng ảnh và video lên tanosine.com. Thử <a href="/webroot/submit?file=1">đăng ngay!</a></span>
-                    <a class="keyboard_link" href="#keyboard">Cách lướt ảnh nhanh hơn tại đây</a>
+                    <span><b>Mẹo</b>: {$lang356}<a href="/webroot/submit?file=1">{$lang357}!</a></span>
+                    <a class="keyboard_link" href="#keyboard">{$lang358}</a>
                 </div>
 
                 <center>
 
                     <div class="tips">
-                        <b>Bạn</b> là người góp phần quyết định những hình ảnh này có được hiển thị ở trang
-                        chủ hay không.
+                        <b>{$lang359}</b> {$lang360}
                         <br/>
-                        Hãy <b>click </b>vào các nút <span class="iconVoteUp"></span>hoặc <span class="iconVoteDown">
-                        </span>ở mỗi hình ảnh dưới đây để <b>bình chọn</b> nhé!
+                        Hãy <b>click </b>{$lang361} <span class="iconVoteUp"></span>hoặc <span class="iconVoteDown">
+                        </span>{$lang363}
 
                         <br/>
-                        <b style="color:red">Chú ý: Nếu ảnh có 10 người bình chọn sẽ xuất hiện trên trang chủ</b>
+                        <b style="color:red">{$lang364}</b>
                     </div>
                 </center>
             </div>
@@ -63,10 +62,10 @@
                     {/section}
                 </ul>
                  <div class="view-more" id="view_more_div">
-                    <a class="next-page" id="next_page" href="#" style="display: inline;color:white;">xem thêm, còn nhiều lắm</a>
+                  <a class="next-page" id="next_page" href="#" style="display: inline;color:white;"> {$lang335}</a>
                 </div>
             </div>
-         <div class="plzVoteBottom"><br><span style="color:red">Giúp</span>  tanosine.com <a href="{$baseurl}/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
+         <div class="plzVoteBottom"><br><span style="color:red">{$lang332}</span>  tanosine.com <a href="{$baseurl}/vote">{$lang333}</a> {$lang334}</div>
            <div id="lastPostsLoader"></div>
             {if $AUTOSCROLL eq "1"}
             <div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>

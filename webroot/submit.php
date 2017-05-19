@@ -548,11 +548,18 @@ if ($SID != "" && $SID >= 0 && is_numeric($SID))
 					$post_type = cleanit($_REQUEST['post_type']);
 				if($post_type == "Photo")
 				{
-					$nsfw = intval(cleanit($_REQUEST['nsfw']));
-					$source = cleanit($_REQUEST['source']);
-
-					$blog = $_POST['blog'];
-					$tags = cleanit($_REQUEST['tags']);
+					$nsfw = "";
+					if(isset($_REQUEST['nsfw']))
+						$nsfw = intval(cleanit($_REQUEST['nsfw']));
+					$source = "";
+					if(isset($_REQUEST['source']))
+						$source = cleanit($_REQUEST['source']);
+					$blog = "";
+					if(isset($_POST['blog']))
+						$blog = $_POST['blog'];
+					$tags = "";
+					if(isset($_REQUEST['tags']))
+						cleanit($_REQUEST['tags']);
 					$CID = cleanit($_REQUEST['CID']);
 					$title = cleanit($_REQUEST['title']);
 					$url = cleanit($_REQUEST['url']);
@@ -573,7 +580,7 @@ if ($SID != "" && $SID >= 0 && is_numeric($SID))
 						if($ph == "jpg" || $ph == "jpeg" || $ph == "png" || $ph == "gif")
 						{
 
-							$query="INSERT INTO posts SET USERID='".mysql_real_escape_string($SID)."', story='".mysql_real_escape_string($title)."', tags='".mysql_real_escape_string($tags)."', blog='".mysql_real_escape_string($_POST['blog'])."', source='".mysql_real_escape_string($source)."', CID='".mysql_real_escape_string($CID)."', nsfw='".mysql_real_escape_string($nsfw)."', url='".mysql_real_escape_string($url)."', time_added='".time()."', date_added='".date("Y-m-d")."', active='0', pip='".$_SERVER['REMOTE_ADDR']."'";
+							@$query="INSERT INTO posts SET USERID='".mysql_real_escape_string($SID)."', story='".mysql_real_escape_string($title)."', tags='".mysql_real_escape_string($tags)."', blog='".mysql_real_escape_string($_POST['blog'])."', source='".mysql_real_escape_string($source)."', CID='".mysql_real_escape_string($CID)."', nsfw='".mysql_real_escape_string($nsfw)."', url='".mysql_real_escape_string($url)."', time_added='".time()."', date_added='".date("Y-m-d")."', active='0', pip='".$_SERVER['REMOTE_ADDR']."'";
 							$result=$conn->execute($query);
 							$pid = mysql_insert_id();
 							$uploadedimage = $config['pdir'].'/'.$pid.'-temp.'.$ph;

@@ -49,5 +49,6 @@ RewriteRule ^rules$ rules.php
 RewriteRule ^contact$ contact.php
 RewriteRule ^rss$ rss.php
 RewriteRule ^meme$ comic
+RewriteRule ^chetin$ comic
 ErrorDocument 404 /index.php
 </IfModule>

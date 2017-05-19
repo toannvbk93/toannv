@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-18 17:16:38
+<?php /* Smarty version 2.6.6, created on 2017-05-19 19:17:15
          compiled from home_bit.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'home_bit.tpl', 1, false),array('modifier', 'stripslashes', 'home_bit.tpl', 1, false),array('modifier', 'truncate', 'home_bit.tpl', 1, false),array('insert', 'return_youtube2', 'home_bit.tpl', 21, false),array('insert', 'return_fod2', 'home_bit.tpl', 26, false),array('insert', 'return_vfy2', 'home_bit.tpl', 29, false),array('insert', 'return_vmo2', 'home_bit.tpl', 31, false),array('insert', 'get_time_to_days_ago', 'home_bit.tpl', 50, false),array('insert', 'get_fav_count', 'home_bit.tpl', 62, false),array('insert', 'get_advertisement', 'home_bit.tpl', 106, false),)), $this); ?>

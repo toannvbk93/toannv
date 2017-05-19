@@ -56,20 +56,20 @@
         <a href="{$baseurl}/" id="logo">{$site_name}</a>
         <ul id="menuBar" class="main-menu" style="overflow:visible">
 
-            <li><a href="{$baseurl}/">Mới</a>
+            <li><a href="{$baseurl}/">{$lang336}</a>
             </li>
-            <li><a href="{$baseurl}/vote">Bình chọn</a>
+            <li><a href="{$baseurl}/vote">{$lang337}</a>
             </li>
-            <li><a href="{$baseurl}/video">Video</a>
+            <li><a href="{$baseurl}/video">{$lang338}</a>
             </li>
-            <li><a href="{$baseurl}/hot">Hot</a> </li>
-            <li><a class="current">Chế ảnh</a>
+            <li><a href="{$baseurl}/hot">{$lang339}</a> </li>
+            <li><a class="current">{$lang340}</a>
                 <ul>
-                    <li><a href="{$baseurl}/comic">Chế Comic</a>
+                    <li><a href="{$baseurl}/comic">{$lang351}</a>
                     </li>
-                    <li><a href="{$baseurl}/meme">Chế Meme</a>
+                    <li><a href="{$baseurl}/meme">{$lang352}</a>
                     </li>
-                    <li><a href="{$baseurl}/chetin">Chế tin nhắn</a>
+                    <li><a href="{$baseurl}/chetin">{$lang353}</a>
                     </li>
                 </ul>
             </li>
@@ -77,7 +77,7 @@
             <li><a class="{if $menu eq 5}current{/if}" href="{$baseurl}/channels/{$allchannels[i].cname|makeseo}">{$allchannels[i].cname}</a>
             </li>
             {/section} {/if}
-            <li><a class="{if $menu eq 6}current{/if}" href="{$baseurl}/search"><strong>Tìm kiếm</strong></a>
+            <li><a class="{if $menu eq 6}current{/if}" href="{$baseurl}/search"><strong>{$lang341}</strong></a>
             </li>
             <!--{if $allchannels}
             <li><a class="{if $menu eq 5}current{/if}">Kênh HOT</a>

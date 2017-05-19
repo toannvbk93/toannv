@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-18 17:16:43
+<?php /* Smarty version 2.6.6, created on 2017-05-19 19:17:22
          compiled from vote.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'vote.tpl', 5, false),array('modifier', 'stripslashes', 'vote.tpl', 6, false),array('insert', 'get_advertisement', 'vote.tpl', 15, false),)), $this); ?>
@@ -51,7 +51,8 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_adverti
 </div>
     <div id="content-holder">
         <div class="main-filter ">
-          <h1 style="margin-left:15px;margin-top: 10px;">Bình chọn ảnh để xuất hiện ở trang chủ</h1>
+          <h1 style="margin-left:15px;margin-top: 10px;"><?php echo $this->_tpl_vars['lang355']; ?>
+</h1>
             <?php if ($this->_tpl_vars['thumbs'] == '1'): ?>
             <a id="changeview" class="view_thumbs" href="<?php echo $this->_tpl_vars['baseurl']; ?>
 /vote?view=thumbs" title="Toggle Views"><?php echo $this->_tpl_vars['lang258']; ?>
@@ -78,21 +79,28 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_adverti
 <div id="use-tips">
                 <div class="list-tips" id="view-info">
                     <div style="display:none" id="shortcut-event-label">Tip-Press-2</div>
-                    <span><b>Mẹo</b>: Ai cũng có thể đăng ảnh và video lên tanosine.com. Thử <a href="/webroot/submit?file=1">đăng ngay!</a></span>
-                    <a class="keyboard_link" href="#keyboard">Cách lướt ảnh nhanh hơn tại đây</a>
+                    <span><b>Mẹo</b>: <?php echo $this->_tpl_vars['lang356']; ?>
+<a href="/webroot/submit?file=1"><?php echo $this->_tpl_vars['lang357']; ?>
+!</a></span>
+                    <a class="keyboard_link" href="#keyboard"><?php echo $this->_tpl_vars['lang358']; ?>
+</a>
                 </div>
 
                 <center>
 
                     <div class="tips">
-                        <b>Bạn</b> là người góp phần quyết định những hình ảnh này có được hiển thị ở trang
-                        chủ hay không.
-                        <br/>
-                        Hãy <b>click </b>vào các nút <span class="iconVoteUp"></span>hoặc <span class="iconVoteDown">
-                        </span>ở mỗi hình ảnh dưới đây để <b>bình chọn</b> nhé!
+                        <b><?php echo $this->_tpl_vars['lang359']; ?>
+</b> <?php echo $this->_tpl_vars['lang360']; ?>
 
                         <br/>
-                        <b style="color:red">Chú ý: Nếu ảnh có 10 người bình chọn sẽ xuất hiện trên trang chủ</b>
+                        Hãy <b>click </b><?php echo $this->_tpl_vars['lang361']; ?>
+ <span class="iconVoteUp"></span>hoặc <span class="iconVoteDown">
+                        </span><?php echo $this->_tpl_vars['lang363']; ?>
+
+
+                        <br/>
+                        <b style="color:red"><?php echo $this->_tpl_vars['lang364']; ?>
+</b>
                     </div>
                 </center>
             </div>
@@ -133,11 +141,15 @@ unset($_smarty_tpl_vars);
                     <?php endfor; endif; ?>
                 </ul>
                  <div class="view-more" id="view_more_div">
-                    <a class="next-page" id="next_page" href="#" style="display: inline;color:white;">xem thêm, còn nhiều lắm</a>
+                  <a class="next-page" id="next_page" href="#" style="display: inline;color:white;"> <?php echo $this->_tpl_vars['lang335']; ?>
+</a>
                 </div>
             </div>
-         <div class="plzVoteBottom"><br><span style="color:red">Giúp</span>  tanosine.com <a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
+         <div class="plzVoteBottom"><br><span style="color:red"><?php echo $this->_tpl_vars['lang332']; ?>
+</span>  tanosine.com <a href="<?php echo $this->_tpl_vars['baseurl']; ?>
+/vote"><?php echo $this->_tpl_vars['lang333']; ?>
+</a> <?php echo $this->_tpl_vars['lang334']; ?>
+</div>
            <div id="lastPostsLoader"></div>
             <?php if ($this->_tpl_vars['AUTOSCROLL'] == '1'): ?>
             <div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>

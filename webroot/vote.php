@@ -120,7 +120,7 @@ if ($SID > 0 || $voteforvisitor == 1) {
     STemplate::assign('tpage', $tpage);
     if(isset($posts))
     STemplate::assign('posts', $posts);
-    if ($_SESSION['viewtype'] == "list") {
+    if (isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "list") {
         $templateselect = "vote.tpl";
     } else {
         $templateselect = "tvote.tpl";

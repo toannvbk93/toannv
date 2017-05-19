@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-18 16:33:28
+<?php /* Smarty version 2.6.6, created on 2017-05-19 19:07:09
          compiled from vote_js.tpl */ ?>
 	<?php echo '
 	<script type="text/javascript">

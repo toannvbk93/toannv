@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-18 17:16:24
+<?php /* Smarty version 2.6.6, created on 2017-05-19 19:09:19
          compiled from trending.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'trending.tpl', 5, false),array('modifier', 'stripslashes', 'trending.tpl', 6, false),array('insert', 'get_advertisement', 'trending.tpl', 15, false),)), $this); ?>

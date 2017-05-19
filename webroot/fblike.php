@@ -1,121 +1,11 @@
-<?php
-/**************************************************************************************************
-| Codehaivl
-| http://www.Codehaivl.com
-| codehaivl@gmail.com
-|
-|**************************************************************************************************
-|
-| By using this software you agree that you have read and acknowledged our End-User License 
-| Agreement available at http://www.Codehaivl.com/eula.html and to be bound by it.
-|
-| Copyright (c) Codehaivl.com. All rights reserved.
-|**************************************************************************************************/
-
-include("include/config.php");
-include("include/functions/import.php");
-$thebaseurl = $config['baseurl'];
-$gagid = intval($_REQUEST['gagid']);
-$gagstory = $_REQUEST['gagstory'];
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" onkeypress="keyfind(event)" lang="{$lang254}" dir="{$lang255}">
-<head prefix="og: http://ogp.me/ns/fb#">
-<style>body.plugin{background:transparent;overflow:hidden}
-body{background:#fff;font-size:11px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;color:#333;line-height:1.28;margin:0;padding:0;text-align:left;direction:ltr;unicode-bidi:embed}
-h1, h2, h3, h4, h5, h6{font-size:13px;color:#333;margin:0;padding:0}
-h1{font-size:14px}
-h4, h5, h6{font-size:11px}
-p{margin:1em 0}
-a{cursor:pointer;color:#3b5998;-moz-outline-style:none;text-decoration:none}
-a:hover{text-decoration:underline}
-img{border:0}
-td, td.label{font-size:11px;text-align:left}
-dd{color:#000}
-dt{color:#777}
-ul{list-style-type:none;margin:0;padding:0}
-abbr{border-bottom:none}
-hr{background:#d9d9d9;border-width:0;color:#d9d9d9;height:1px}
-.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
-.clearfix{zoom:1}
-.datawrap{word-wrap:break-word}
-.word_break{display:inline-block}
-.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.img_loading{position:absolute;top:-9999999px}
-.aero{opacity:.5}
-.column{float:left}
-.center{margin-left:auto;margin-right:auto}
-#facebook .hidden_elem{display:none !important}
-#facebook .invisible_elem{visibility:hidden}
-#facebook .accessible_elem{left:-9999px;position:fixed}
-.direction_ltr{direction:ltr}
-.direction_rtl{direction:rtl}
-.text_align_ltr{text-align:left}
-.text_align_rtl{text-align:right}
-.uiGrid{border:0;border-collapse:collapse;border-spacing:0}
-.uiGridFixed{table-layout:fixed;width:100%}
-.uiGrid .vTop{vertical-align:top}
-.uiGrid .vMid{vertical-align:middle}
-.uiGrid .vBot{vertical-align:bottom}
-.uiGrid .hLeft{text-align:left}
-.uiGrid .hCent{text-align:center}
-.uiGrid .hRght{text-align:right}
-.pluginErrorLink{color:#f03d25}
-.fss{font-size:9px}
-.fsm{font-size:11px}
-.fsl{font-size:13px}
-.fsxl{font-size:16px}
-.fsxxl{font-size:18px}
-.fwn{font-weight:normal}
-.fwb{font-weight:bold}
-.fcb{color:#333}
-.fcg{color:gray}
-form{margin:0;padding:0}
-label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
-label input{font-weight:normal}
-textarea, .inputtext, .inputpassword{border:1px solid #bdc7d8;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size:11px;margin:0;padding:3px}
-textarea{max-width:100%}
-select{border:1px solid #bdc7d8;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size:11px;padding:2px}
-.inputtext, .inputpassword{padding-bottom:4px}
-.ff4.mac .inputtext, .ff4.mac .inputpassword{padding-bottom:3px}
-.inputradio{padding:0;margin:0 5px 0 0;vertical-align:middle}
-.inputcheckbox{border:0;vertical-align:middle}
-.inputbutton, .inputsubmit{border-style:solid;border-width:1px;border-color:#d9dfea #0e1f5b #0e1f5b #d9dfea;background-color:#3b5998;color:#fff;padding:2px 15px 3px 15px;text-align:center}
-.inputsubmit_disabled{background-color:#999;border-bottom:1px solid #000;border-right:1px solid #666;color:#fff}
-.inputaux{background:#f0f0f0;border-color:#e7e7e7 #666 #666 #e7e7e7;color:#000}
-.inputaux_disabled{color:#999}
-.inputsearch{background:#fff url(https://s-static.ak.fbcdn.net/rsrc.php/v2/y7/x/IJYgcESal33.png) no-repeat left 4px;padding-left:17px}
-.pluginButton{background:#eceef5;border-radius:3px;border:1px solid #cad4e7;cursor:pointer;padding:2px 6px 4px;white-space:nowrap;color:#3b5998}
-.pluginButtonInline{display:inline-block}
-.pluginButtonX{cursor:default}
-.pluginButton button{background:transparent;border:0;margin:-1px;padding:0;font:inherit;color:inherit;cursor:pointer}
-.pluginButton button::-moz-focus-inner{border:0;padding:0}
-.pluginButtonIcon{position:relative;top:3px;margin-right:3px}
-.pluginButtonSmall{padding:0 5px 2px 5px}
-.pluginButtonSmall .pluginButtonIcon{margin-right:2px}
-.pluginButton:hover{border-color:#9dacce}
-.pluginButtonPressed, .pluginButtonPressed:hover{background-color:#eee;border-color:#ddd;color:#aaa}
-.pluginSkinDark .pluginButton{background-color:#c7c7c7;border-color:#999;color:#333}
-.pluginSkinDark .pluginButton:hover{background-color:#d9d9d9;border-color:#ddd}
-.pluginSkinDark .pluginButtonPressed, .pluginSkinDark .pluginButtonPressed:hover{background-color:#444;border-color:#555;color:#666}
-.pluginButtonErrorLink{color:#a00;font-weight:bold}
-.pluginButtonX .pluginButtonXOff, .pluginButtonX button:hover .pluginButtonXOn{display:inline-block}
-.pluginButtonX .pluginButtonXOn, .pluginButtonX button:hover .pluginButtonXOff{display:none}
-.pluginButton .pluginButtonThrobber, form.async_saving .pluginButtonIconWithThrobber{display:none}
-form.async_saving .pluginButtonThrobber{display:inline-block;margin-top:2px;margin-bottom:1px;max-width:14px}
-.sp_like{background-image:url(https://s-static.ak.fbcdn.net/rsrc.php/v2/yI/x/1dQf_ATK831.png);background-repeat:no-repeat;display:inline-block;height:14px;width:14px}
-.sx_like_fav{background-position:-0px -0px}
+<?phpinclude("include/config.php");include("include/functions/import.php");$thebaseurl = $config['baseurl'];$gagid = intval($_REQUEST['gagid']);$gagstory = $_REQUEST['gagstory'];?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" onkeypress="keyfind(event)" lang="{$lang254}" dir="{$lang255}"><head prefix="og: http://ogp.me/ns/fb#"><style>body.plugin{background:transparent;overflow:hidden}body{background:#fff;font-size:11px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;color:#333;line-height:1.28;margin:0;padding:0;text-align:left;direction:ltr;unicode-bidi:embed}h1, h2, h3, h4, h5, h6{font-size:13px;color:#333;margin:0;padding:0}h1{font-size:14px}h4, h5, h6{font-size:11px}p{margin:1em 0}a{cursor:pointer;color:#3b5998;-moz-outline-style:none;text-decoration:none}a:hover{text-decoration:underline}img{border:0}td, td.label{font-size:11px;text-align:left}dd{color:#000}dt{color:#777}ul{list-style-type:none;margin:0;padding:0}abbr{border-bottom:none}hr{background:#d9d9d9;border-width:0;color:#d9d9d9;height:1px}.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}.clearfix{zoom:1}.datawrap{word-wrap:break-word}.word_break{display:inline-block}.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.img_loading{position:absolute;top:-9999999px}.aero{opacity:.5}.column{float:left}.center{margin-left:auto;margin-right:auto}#facebook .hidden_elem{display:none !important}#facebook .invisible_elem{visibility:hidden}#facebook .accessible_elem{left:-9999px;position:fixed}.direction_ltr{direction:ltr}.direction_rtl{direction:rtl}.text_align_ltr{text-align:left}.text_align_rtl{text-align:right}.uiGrid{border:0;border-collapse:collapse;border-spacing:0}.uiGridFixed{table-layout:fixed;width:100%}.uiGrid .vTop{vertical-align:top}.uiGrid .vMid{vertical-align:middle}.uiGrid .vBot{vertical-align:bottom}.uiGrid .hLeft{text-align:left}.uiGrid .hCent{text-align:center}.uiGrid .hRght{text-align:right}.pluginErrorLink{color:#f03d25}.fss{font-size:9px}.fsm{font-size:11px}.fsl{font-size:13px}.fsxl{font-size:16px}.fsxxl{font-size:18px}.fwn{font-weight:normal}.fwb{font-weight:bold}.fcb{color:#333}.fcg{color:gray}form{margin:0;padding:0}label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}label input{font-weight:normal}textarea, .inputtext, .inputpassword{border:1px solid #bdc7d8;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size:11px;margin:0;padding:3px}textarea{max-width:100%}select{border:1px solid #bdc7d8;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size:11px;padding:2px}.inputtext, .inputpassword{padding-bottom:4px}.ff4.mac .inputtext, .ff4.mac .inputpassword{padding-bottom:3px}.inputradio{padding:0;margin:0 5px 0 0;vertical-align:middle}.inputcheckbox{border:0;vertical-align:middle}.inputbutton, .inputsubmit{border-style:solid;border-width:1px;border-color:#d9dfea #0e1f5b #0e1f5b #d9dfea;background-color:#3b5998;color:#fff;padding:2px 15px 3px 15px;text-align:center}.inputsubmit_disabled{background-color:#999;border-bottom:1px solid #000;border-right:1px solid #666;color:#fff}.inputaux{background:#f0f0f0;border-color:#e7e7e7 #666 #666 #e7e7e7;color:#000}.inputaux_disabled{color:#999}.inputsearch{background:#fff url(https://s-static.ak.fbcdn.net/rsrc.php/v2/y7/x/IJYgcESal33.png) no-repeat left 4px;padding-left:17px}.pluginButton{background:#eceef5;border-radius:3px;border:1px solid #cad4e7;cursor:pointer;padding:2px 6px 4px;white-space:nowrap;color:#3b5998}.pluginButtonInline{display:inline-block}.pluginButtonX{cursor:default}.pluginButton button{background:transparent;border:0;margin:-1px;padding:0;font:inherit;color:inherit;cursor:pointer}.pluginButton button::-moz-focus-inner{border:0;padding:0}.pluginButtonIcon{position:relative;top:3px;margin-right:3px}.pluginButtonSmall{padding:0 5px 2px 5px}.pluginButtonSmall .pluginButtonIcon{margin-right:2px}.pluginButton:hover{border-color:#9dacce}.pluginButtonPressed, .pluginButtonPressed:hover{background-color:#eee;border-color:#ddd;color:#aaa}.pluginSkinDark .pluginButton{background-color:#c7c7c7;border-color:#999;color:#333}.pluginSkinDark .pluginButton:hover{background-color:#d9d9d9;border-color:#ddd}.pluginSkinDark .pluginButtonPressed, .pluginSkinDark .pluginButtonPressed:hover{background-color:#444;border-color:#555;color:#666}.pluginButtonErrorLink{color:#a00;font-weight:bold}.pluginButtonX .pluginButtonXOff, .pluginButtonX button:hover .pluginButtonXOn{display:inline-block}.pluginButtonX .pluginButtonXOn, .pluginButtonX button:hover .pluginButtonXOff{display:none}.pluginButton .pluginButtonThrobber, form.async_saving .pluginButtonIconWithThrobber{display:none}form.async_saving .pluginButtonThrobber{display:inline-block;margin-top:2px;margin-bottom:1px;max-width:14px}.sp_like{background-image:url(https://s-static.ak.fbcdn.net/rsrc.php/v2/yI/x/1dQf_ATK831.png);background-repeat:no-repeat;display:inline-block;height:14px;width:14px}.sx_like_fav{background-position:-0px -0px}
 .sx_like_ch{background-position:-0px -15px}
 .sx_like_x{background-position:-0px -30px}
 .sx_like_thumb{background-position:-0px -45px}
 i.img u{position:absolute;top:-9999999px}
 .pluginCountButton{background:#fff;border:1px solid #c1c1c1;display:inline-block;height:14px;line-height:14px;margin-left:6px;min-width:15px;padding:1px 2px;text-align:center;white-space:nowrap}
 .pluginCountButtonNub{height:0;left:2px;position:relative;top:-14px;width:5px;z-index:2}
-.pluginCountButtonNub s, .pluginCountButtonNub i{border-color:transparent #D7D7D7 transparent;border-style:solid;border-width:4px 5px 4px 0;display:block;position:relative;top:1px}
-.pluginCountButtonNub i{border-right-color:#fff;left:2px;top:-7px}
-.pluginCountButtonDark{background:#d7d7d7;border-color:#d7d7d7;color:#333}
-.pluginCountButtonDarkNub i{display:none}
-.pluginCountTextConnected,
+.pluginCountButtonNub s, .pluginCountButtonNub i{border-color:transparent #D7D7D7 transparent;border-style:solid;border-width:4px 5px 4px 0;display:block;position:relative;top:1px}.pluginCountButtonNub i{border-right-color:#fff;left:2px;top:-7px}.pluginCountButtonDark{background:#d7d7d7;border-color:#d7d7d7;color:#333}.pluginCountButtonDarkNub i{display:none}.pluginCountTextConnected,
 .pluginCountConnected .pluginCountTextDisconnected{display:none}
 .pluginCountConnected .pluginCountTextConnected{display:inline}
 ._5v8{position:absolute;width:100%}

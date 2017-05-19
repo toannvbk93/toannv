@@ -4,7 +4,7 @@ include("include/functions/import.php");
 $thebaseurl = $config['baseurl'];
 if (isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "" && $_REQUEST['view'] == "") {
     $_SESSION['viewtype'] = "list";
-} elseif (isset($_REQUEST['view']) && $_SESSION['viewtype'] == "list" && $_REQUEST['view'] == "") {
+} elseif (isset($_REQUEST['view']) && isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "list" && $_REQUEST['view'] == "") {
     $_SESSION['viewtype'] = "list";
 } else
   if(isset($_SESSION['viewtype']))

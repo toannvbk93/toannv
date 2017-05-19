@@ -87,7 +87,7 @@
 
                     <span class="comment">Lượt bình luận: <strong><fb:comments-count href="{$baseurl}{$postfolder}{$p.PID}"></fb:comments-count></strong></span>
 
-                    <span score="0" votes="{$p.view}" class="view" id="view_count">Lượt xem: <strong>{$p.view}</strong></span>
+                    <span score="0" votes="{$p.view}" class="view" id="view_count">{$lang285}: <strong>{$p.view}</strong></span>
 
                     {if $owner eq "1"}
                     <span class="seperator">|</span>
@@ -104,35 +104,35 @@
                             {insert name=get_fav_status value=var assign=isfav PID=$p.PID}
                             {if $isfav eq "1"}
                             <li class="bored-li">
-                                <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down "  entryId="{$p.PID}" href="javascript:void(0);"><span>Chán</span></a>
+                                <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down "  entryId="{$p.PID}" href="javascript:void(0);"><span>{$lang365}</span></a>
                             </li>
                             <li class="love-li">
-                                <a class="vote love loved" id="post_love_{$p.PID}" rel="{$p.PID}" href="javascript:void(0);"><span>Duyệt</span></a>
+                                <a class="vote love loved" id="post_love_{$p.PID}" rel="{$p.PID}" href="javascript:void(0);"><span>{$lang366}</span></a>
                             </li>
                             {else}
                                 {insert name=get_unfav_status value=var assign=isunfav PID=$p.PID}
                                 {if $isunfav eq "1"}
                                 <li class="bored-li">
-                                    <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down unloved "  entryId="{$p.PID}" href="javascript:void(0);"><span>Chán</span></a>
+                                    <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down unloved "  entryId="{$p.PID}" href="javascript:void(0);"><span>{$lang365}</span></a>
                                 </li>
                                 <li class="love-li">
-                                    <a class="vote love " id="post_love_{$p.PID}" rel="{$p.PID}" href="javascript:void(0);"><span>Duyệt</span></a>
+                                    <a class="vote love " id="post_love_{$p.PID}" rel="{$p.PID}" href="javascript:void(0);"><span>{$lang366}</span></a>
                                 </li>
                                 {else}
                                 <li class="bored-li">
-                                    <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down "  entryId="{$p.PID}" href="javascript:void(0);"><span>Chán</span></a>
+                                    <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down "  entryId="{$p.PID}" href="javascript:void(0);"><span>{$lang365}</span></a>
                                 </li>
                                 <li class="love-li">
-                                    <a class="vote love " id="post_love_{$p.PID}" rel="{$p.PID}" href="javascript:void(0);"><span>Duyệt</span></a>
+                                    <a class="vote love " id="post_love_{$p.PID}" rel="{$p.PID}" href="javascript:void(0);"><span>{$lang366}</span></a>
                                 </li>
                                 {/if}
                             {/if}
                         {else}
                         <li class="bored-li">
-                            <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down " entryId="{$p.PID}" href="{$baseurl}/login"><span>Chán</span></a>
+                            <a id="vote-down-btn-{$p.PID}" class="unlove badge-vote-down " entryId="{$p.PID}" href="{$baseurl}/login"><span>{$lang365}</span></a>
                         </li>
                         <li class="love-li">
-                            <a class="vote love " id="post_love_{$p.PID}" rel="{$p.PID}" href="{$baseurl}/login"><span>Duyệt</span></a>
+                            <a class="vote love " id="post_love_{$p.PID}" rel="{$p.PID}" href="{$baseurl}/login"><span>{$lang366}</span></a>
                         </li>
                         {/if}
                     {/if}
@@ -207,7 +207,7 @@
                         </div>
                    <div style="margin-bottom:5px;" align="center">  {insert name=get_advertisement AID=6}</div>
                 <div class="featuredFanPage">
-                <span><a href="http://www.facebook.com/{$FACEBOOK_PROFILE}" style="font-size: 13px;padding-top:5px;padding-right:5px;float:left;color:#3B5998;">Like codehaivl2015.com để cười nhiều hơn</a></span>
+                <span><a href="http://www.facebook.com/{$FACEBOOK_PROFILE}" style="font-size: 13px;padding-top:5px;padding-right:5px;float:left;color:#3B5998;">{$lang153}</a></span>
 
                 <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2F{$FACEBOOK_PROFILE}&amp;width=460&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:460px; height:30px;" allowTransparency="true"></iframe>
                 <div class="clear"></div></div>
@@ -265,7 +265,7 @@
             <div class="clearfix"></div>
             </div>
     <div class="vr-box">
-    <h3>Giúp codehaivl2015.com duyệt bài này</h3>
+    <h3>{$lang288}</h3>
         <div class="info-wrapper">
             <ol>
             {section name=i loop=$vr}

@@ -170,7 +170,7 @@ $lang['164'] =  "ngày trước";
 $lang['165'] =  "Bình luận";
 $lang['166'] =  "Mới hơn";
 $lang['167'] =  "Cũ hơn";
-$lang['168'] =  "Xem codehaivl2015.com Like A Boss!";
+$lang['168'] =  " Like A Boss!";
 $lang['169'] =  "Mẹo:";
 $lang['170'] =  " Bấm 'J' hoặc 'K' để chuyển bài nhanh.";
 $lang['171'] =  "Tip-Press-2";
@@ -362,6 +362,20 @@ $lang['347'] = "Số bài cho phép trong ngày";
 $lang['348'] = "Copy và dán link ảnh tại đây";
 $lang['349'] = "Nội dung";
 $lang['350'] = "Khung soạn thảo nhanh";
-
-
+$lang['351'] = "Chế Comic";
+$lang['352'] = "Chế Meme";
+$lang['353'] = "Chế tin nhắn";
+$lang['354'] = " để được cười nhiều hơn;)";
+$lang['355'] = "Bình chọn ảnh để xuất hiện ở trang chủ";
+$lang['356'] = "Ai cũng có thể đăng ảnh và video lên tanosine.com. Thử ";
+$lang['357'] = "đăng ngay";
+$lang['358'] = "Cách lướt ảnh nhanh hơn tại đây";
+$lang['359'] = "Bạn" ;
+$lang['360'] = "là người góp phần quyết định những hình ảnh này có được hiển thị ở trang chủ hay không.";
+$lang['361'] = "vào các nút";
+$lang['362'] = "hoặc";
+$lang['363'] = "ở mỗi hình ảnh dưới đây để <b>bình chọn</b> nhé!";
+$lang['364'] = "Chú ý: Nếu ảnh có 10 người bình chọn sẽ xuất hiện trên trang chủ";
+$lang['365'] = "Chán";
+$lang['366'] = "Duyệt";
 ?>

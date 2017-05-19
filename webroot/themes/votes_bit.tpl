@@ -1,8 +1,8 @@
                     <li class=" gag-link" data-url="{$baseurl}{$postfolder}{$posts[i].PID}/{if SEO eq "1"}{$posts[i].story|makeseo}.html{/if}" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" gagId="{$posts[i].PID}" itemType="list" id="entry-{$posts[i].PID}">
                         <div class="content">
                             <div class="img-wrap">
-                           
-  
+
+
                                 {if $posts[i].nsfw eq "1" AND $smarty.session.FILTER ne "0"}
                                     <a target="_blank" href="{$baseurl}{$postfolder}{$posts[i].PID}"><img src="{$baseurl}/images/nsfw.jpg" alt="{$posts[i].story|stripslashes}" /></a>
                                 {else}
@@ -39,7 +39,7 @@
                             </div>
                             {if $displaywm eq "0" AND $posts[i].pic ne "" AND $posts[i].gif ne "1" AND $posts[i].nsfw eq "0"}
                             <div class="watermark-clear"></div>
-                            {/if}                          
+                            {/if}
                         </div>
                         <div style="position:relative;width:220px;float:right">
                             <div class="info b9gcs-stop" id="action-{$posts[i].PID}">
@@ -54,8 +54,8 @@
                                         </div>
                                     <div class="clear"></div>
                                 </div>
-                                
-                                <!-- /ket thuc them vao info -->                              
+
+                                <!-- /ket thuc them vao info -->
                                 <p>
                                     <span class="comment">
                                         <fb:comments-count href="{$baseurl}{$postfolder}{$posts[i].PID}"></fb:comments-count>
@@ -107,7 +107,7 @@
                                         <li class="facebook" id="share1-{$posts[i].PID}">
                                             <span id="list-share-twitter-{$posts[i].PID}">
                                                 {if $share1 eq 1}
-                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>     
+                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>
                                                 {elseif $share1 eq 2}
                                                 <div style="float:right" class="facebook-share-btn">
                                                     <fb:share-button href="{$baseurl}{$postfolder}{$posts[i].PID}" type="button_count"></fb:share-button>
@@ -117,11 +117,11 @@
                                                 {/if}
                                             </span>
                                                 {if $share2 eq 1}
-                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>     
+                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>
                                                 {elseif $share2 eq 2}
                                                 <div style="float:right" class="facebook-share-btn">
                                                     <fb:share-button href="{$baseurl}{$postfolder}{$posts[i].PID}" type="button_count"></fb:share-button>
-                                
+
                                                 </div>
                                                 {else}
                                                     <iframe src="//www.facebook.com/plugins/like.php?href={$baseurl}{$postfolder}{$posts[i].PID}&amp;width=80&amp;height=20&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId={$FACEBOOK_APP_ID}" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:20px;" allowTransparency="true"></iframe>
@@ -134,12 +134,12 @@
                             </div>
                         </div>
                     </li>
-                    
-              
+
+
   {if $smarty.section.i.first}
       <li style="padding: 0px;">
             <div style="background-color: #EEEEEE;margin: 10px 0px 10px 0px;padding: 5px;">
-                                <span style="font-size: 18px;color:#880015"><b>Like <a style="display:inline;" href="http://www.facebook.com/{$FACEBOOK_PROFILE}" target="_blank">codehaivl2015.com trên Facebook</a> để được cười nhiều hơn;)</b></span>
+                                <span style="font-size: 18px;color:#880015"><b>Like <a style="display:inline;" href="http://www.facebook.com/{$FACEBOOK_PROFILE}" target="_blank">Facebook</a>{$lang354}</b></span>
                 <br>    <div class="fb-like" data-href="http://www.facebook.com/{$FACEBOOK_PROFILE}" data-width="450" data-show-faces="false" data-send="false"></div>
             </div>
             </li>
