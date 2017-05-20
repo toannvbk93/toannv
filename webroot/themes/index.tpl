@@ -13,7 +13,7 @@
 <div id="main">
 
  <div style="margin-bottom:5px;" align="center">	{insert name=get_advertisement AID=8}</div>
-    <div id="content-holder">        
+    <div id="content-holder">
         <div class="main-filter ">
            <h1 style="margin-left:15px;margin-top: 10px;">Ảnh đang HOT</h1>
 			{if $thumbs eq "1"}
@@ -31,26 +31,26 @@
             {/if}
 			{/if}
         </div>
-        <div id="content" listPage="hot">            
+        <div id="content" listPage="hot">
             <div id="use-tips">
                 <div class="list-tips" id="view-info">
                     <div style="display:none" id="shortcut-event-label">Tip-Press-2</div>
-                    <span><b>Mẹo</b>: Ai cũng có thể đăng ảnh và video lên codehaivl2015.com. Thử <a href="/submit?file=1">đăng ngay!</a></span>
-                    <a class="keyboard_link" href="#keyboard">Cách lướt ảnh nhanh hơn tại đây</a>        
+                    <span><b>Mẹo</b>: {$lang356}<a href="/submit?file=1">{$lang357}!</a></span>
+                    <a class="keyboard_link" href="#keyboard">{$lang358}</a>
                 </div>
             </div>
             <div id="entries-content" class="list">
                 <ul id="entries-content-ul" class="col-1">
                     {section name=i loop=$posts}
                     {include file="posts_bit.tpl"}
-                    {/section}                    
+                    {/section}
                 </ul>
                 	<div class="view-more" id="view_more_div">
 					<a class="next-page" id="next_page" href="#" style="display: inline;color:white;">xem thêm, còn nhiều lắm</a>
 				</div>
             </div>
  <div class="plzVoteBottom"><br><span style="color:red">Giúp</span>  codehaivl2015.com <a href="{$baseurl}/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
-            <div id="lastPostsLoader"></div>                
+            <div id="lastPostsLoader"></div>
 			{if $AUTOSCROLL eq "1"}
 			<div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>
  			{literal}
@@ -75,17 +75,17 @@
 							}
 							$('div#lastPostsLoader').empty();
 						});
-						
+
 						return true;
 					};
 					$(window).scroll(function(){
 						if (document.documentElement.scrollTop)
-						{ 
-							var  curloc = document.documentElement.scrollTop; 
+						{
+							var  curloc = document.documentElement.scrollTop;
 						}
 						else
-						{ 
-							var curloc=$(window).scrollTop(); 
+						{
+							var curloc=$(window).scrollTop();
 						}
 						if  ((curloc+document.documentElement.clientHeight+1)>=($(document).height()-400) && ajaxstart==1 ) {
 							if (tpage <= totPageLoad) {
@@ -99,7 +99,7 @@
 							}
 						};
 						if(curloc>$(window).height()){$('#backtotop').slideDown();}else{$('#backtotop').slideUp();};
-					
+
 					});
 				});
 				</script>
@@ -115,7 +115,7 @@
 					{ var curloc=$(window).scrollTop(); }
 					var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
 					var  scrolltrigger = 0.95;
-				 
+
 					// if  ((wintop/(docheight-winheight)) > scrolltrigger) {
 					//  lastAddedLiveFunc();
 					//  tpage = tpage+1;
@@ -136,8 +136,8 @@
                 {else}
                 <a href="#" onclick="return false;" class="older disabled">{$lang167} &raquo;</a>
                 {/if}
-            </div>		
-			{/if}	
+            </div>
+			{/if}
         </div>
     </div>
 </div>
@@ -145,8 +145,8 @@
 {include file='right.tpl'}
 {literal}
 <script type="text/javascript">
-var adloca=$('#moving-boxes').offset().top; 
- $(window).scroll(function () { 
+var adloca=$('#moving-boxes').offset().top;
+ $(window).scroll(function () {
     var curloca=$(window).scrollTop();
     if(curloca>adloca){
         $('#moving-boxes').css('position','fixed');
@@ -159,6 +159,6 @@ var adloca=$('#moving-boxes').offset().top;
         $('#moving-boxes').css('z-index','!important');
     };
     });
-</script> 
-{/literal}   
+</script>
+{/literal}
 <div id="footer" class="">

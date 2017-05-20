@@ -1,9 +1,4 @@
 <?php
-/**
- * API (codehaivl2015.com)
- * @author thang.le 
- */
-
 include("app_api/config.php");
 include("app_api/function.php");
 include("app_api/api.php");

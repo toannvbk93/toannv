@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-19 19:11:13
+<?php /* Smarty version 2.6.6, created on 2017-05-20 07:48:11
          compiled from view.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'view.tpl', 76, false),array('modifier', 'stripslashes', 'view.tpl', 77, false),array('modifier', 'makeseo', 'view.tpl', 80, false),array('modifier', 'truncate', 'view.tpl', 241, false),array('insert', 'get_fav_status', 'view.tpl', 104, false),array('insert', 'get_unfav_status', 'view.tpl', 113, false),array('insert', 'get_short_url', 'view.tpl', 148, false),array('insert', 'return_youtube', 'view.tpl', 179, false),array('insert', 'return_fod', 'view.tpl', 184, false),array('insert', 'return_vfy', 'view.tpl', 188, false),array('insert', 'return_vmo', 'view.tpl', 192, false),array('insert', 'get_advertisement', 'view.tpl', 208, false),array('function', 'math', 'view.tpl', 234, false),)), $this); ?>
@@ -154,12 +154,14 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_fav_sta
                             <li class="bored-li">
                                 <a id="vote-down-btn-<?php echo $this->_tpl_vars['p']['PID']; ?>
 " class="unlove badge-vote-down "  entryId="<?php echo $this->_tpl_vars['p']['PID']; ?>
-" href="javascript:void(0);"><span>Chán</span></a>
+" href="javascript:void(0);"><span><?php echo $this->_tpl_vars['lang365']; ?>
+</span></a>
                             </li>
                             <li class="love-li">
                                 <a class="vote love loved" id="post_love_<?php echo $this->_tpl_vars['p']['PID']; ?>
 " rel="<?php echo $this->_tpl_vars['p']['PID']; ?>
-" href="javascript:void(0);"><span>Duyệt</span></a>
+" href="javascript:void(0);"><span><?php echo $this->_tpl_vars['lang366']; ?>
+</span></a>
                             </li>
                             <?php else: ?>
                                 <?php require_once(SMARTY_CORE_DIR . 'core.run_insert_handler.php');
@@ -169,23 +171,27 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_unfav_s
                                 <li class="bored-li">
                                     <a id="vote-down-btn-<?php echo $this->_tpl_vars['p']['PID']; ?>
 " class="unlove badge-vote-down unloved "  entryId="<?php echo $this->_tpl_vars['p']['PID']; ?>
-" href="javascript:void(0);"><span>Chán</span></a>
+" href="javascript:void(0);"><span><?php echo $this->_tpl_vars['lang365']; ?>
+</span></a>
                                 </li>
                                 <li class="love-li">
                                     <a class="vote love " id="post_love_<?php echo $this->_tpl_vars['p']['PID']; ?>
 " rel="<?php echo $this->_tpl_vars['p']['PID']; ?>
-" href="javascript:void(0);"><span>Duyệt</span></a>
+" href="javascript:void(0);"><span><?php echo $this->_tpl_vars['lang366']; ?>
+</span></a>
                                 </li>
                                 <?php else: ?>
                                 <li class="bored-li">
                                     <a id="vote-down-btn-<?php echo $this->_tpl_vars['p']['PID']; ?>
 " class="unlove badge-vote-down "  entryId="<?php echo $this->_tpl_vars['p']['PID']; ?>
-" href="javascript:void(0);"><span>Chán</span></a>
+" href="javascript:void(0);"><span><?php echo $this->_tpl_vars['lang365']; ?>
+</span></a>
                                 </li>
                                 <li class="love-li">
                                     <a class="vote love " id="post_love_<?php echo $this->_tpl_vars['p']['PID']; ?>
 " rel="<?php echo $this->_tpl_vars['p']['PID']; ?>
-" href="javascript:void(0);"><span>Duyệt</span></a>
+" href="javascript:void(0);"><span><?php echo $this->_tpl_vars['lang366']; ?>
+</span></a>
                                 </li>
                                 <?php endif; ?>
                             <?php endif; ?>
@@ -194,13 +200,15 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_unfav_s
                             <a id="vote-down-btn-<?php echo $this->_tpl_vars['p']['PID']; ?>
 " class="unlove badge-vote-down " entryId="<?php echo $this->_tpl_vars['p']['PID']; ?>
 " href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/login"><span>Chán</span></a>
+/login"><span><?php echo $this->_tpl_vars['lang365']; ?>
+</span></a>
                         </li>
                         <li class="love-li">
                             <a class="vote love " id="post_love_<?php echo $this->_tpl_vars['p']['PID']; ?>
 " rel="<?php echo $this->_tpl_vars['p']['PID']; ?>
 " href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/login"><span>Duyệt</span></a>
+/login"><span><?php echo $this->_tpl_vars['lang366']; ?>
+</span></a>
                         </li>
                         <?php endif; ?>
                     <?php endif; ?>
@@ -303,7 +311,8 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_adverti
 </div>
                 <div class="featuredFanPage">
                 <span><a href="http://www.facebook.com/<?php echo $this->_tpl_vars['FACEBOOK_PROFILE']; ?>
-" style="font-size: 13px;padding-top:5px;padding-right:5px;float:left;color:#3B5998;">Like codehaivl2015.com để cười nhiều hơn</a></span>
+" style="font-size: 13px;padding-top:5px;padding-right:5px;float:left;color:#3B5998;"><?php echo $this->_tpl_vars['lang153']; ?>
+</a></span>
 
                 <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2F<?php echo $this->_tpl_vars['FACEBOOK_PROFILE']; ?>
 &amp;width=460&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:460px; height:30px;" allowTransparency="true"></iframe>
@@ -395,18 +404,19 @@ $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
 <div>
-        <a class="share-btn" href="http://codehaivl2015.com/submit" class="buttons spaceBottom">Click để bắt đầu chia sẻ những bức ảnh vui!</a>
+        <a class="share-btn" href="http://tanosine.com/submit" class="buttons spaceBottom">Click để bắt đầu chia sẻ những bức ảnh vui!</a>
         <div class="clear">
         </div>
     </div>
     <div id="post-gag-stay" class="_badge-sticky-elements" data-y="60">
     <div class="ad-box">
-    <a href="http://codehaivl2015.com/event" title="Chế ảnh liền tay, nhận ngay thẻ cào"><img src="http://2.bp.blogspot.com/-yEubUsIdss8/VGSE9Oe978I/AAAAAAAAArg/k8n2DTppIjk/s1600/banner.png" width="300" alt="Chế ảnh liền tay, nhận ngay thẻ cào"></a>
+    <a href="http://tanosine.com/event" title="Chế ảnh liền tay, nhận ngay thẻ cào"><img src="http://2.bp.blogspot.com/-yEubUsIdss8/VGSE9Oe978I/AAAAAAAAArg/k8n2DTppIjk/s1600/banner.png" width="300" alt="Chế ảnh liền tay, nhận ngay thẻ cào"></a>
 
             <div class="clearfix"></div>
             </div>
     <div class="vr-box">
-    <h3>Giúp codehaivl2015.com duyệt bài này</h3>
+    <h3><?php echo $this->_tpl_vars['lang288']; ?>
+</h3>
         <div class="info-wrapper">
             <ol>
             <?php unset($this->_sections['i']);

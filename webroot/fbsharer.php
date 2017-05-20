@@ -1,18 +1,4 @@
-<?php
-/**************************************************************************************************
-| Codehaivl
-| http://www.Codehaivl.com
-| codehaivl@gmail.com
-|
-|**************************************************************************************************
-|
-| By using this software you agree that you have read and acknowledged our End-User License 
-| Agreement available at http://www.Codehaivl.com/eula.html and to be bound by it.
-|
-| Copyright (c) Codehaivl.com. All rights reserved.
-|**************************************************************************************************/
-
-include("include/config.php");
+<?phpinclude("include/config.php");
 include("include/functions/import.php");
 $thebaseurl = $config['baseurl'];
 $gagid = intval($_REQUEST['gagid']);

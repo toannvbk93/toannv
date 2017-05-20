@@ -254,13 +254,13 @@
 <div class="side-bar">
     {include file='right2.tpl'}
 <div>
-        <a class="share-btn" href="http://codehaivl2015.com/submit" class="buttons spaceBottom">Click để bắt đầu chia sẻ những bức ảnh vui!</a>
+        <a class="share-btn" href="http://tanosine.com/submit" class="buttons spaceBottom">Click để bắt đầu chia sẻ những bức ảnh vui!</a>
         <div class="clear">
         </div>
     </div>
     <div id="post-gag-stay" class="_badge-sticky-elements" data-y="60">
     <div class="ad-box">
-    <a href="http://codehaivl2015.com/event" title="Chế ảnh liền tay, nhận ngay thẻ cào"><img src="http://2.bp.blogspot.com/-yEubUsIdss8/VGSE9Oe978I/AAAAAAAAArg/k8n2DTppIjk/s1600/banner.png" width="300" alt="Chế ảnh liền tay, nhận ngay thẻ cào"></a>
+    <a href="http://tanosine.com/event" title="Chế ảnh liền tay, nhận ngay thẻ cào"><img src="http://2.bp.blogspot.com/-yEubUsIdss8/VGSE9Oe978I/AAAAAAAAArg/k8n2DTppIjk/s1600/banner.png" width="300" alt="Chế ảnh liền tay, nhận ngay thẻ cào"></a>
 
             <div class="clearfix"></div>
             </div>

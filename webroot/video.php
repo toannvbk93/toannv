@@ -2,7 +2,7 @@
 include("include/config.php");
 include("include/functions/import.php");
 $thebaseurl = $config['baseurl'];
-if ($_SESSION['viewtype'] == "" && $_REQUEST['view'] == "")
+if (isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "" && $_REQUEST['view'] == "")
   {
     $_SESSION['viewtype'] = "list";
   }

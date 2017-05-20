@@ -4,14 +4,14 @@
         <div class="info">
             <p>{insert name=get_static value=var sel=value ID=6}</p>
         </div>
-		<div class="fb-comments" data-href="http://codehaivl2015.com/event" data-width="700" data-numposts="10" data-colorscheme="light"></div>
+		<div class="fb-comments" data-href="http://tanosine.com/event" data-width="700" data-numposts="10" data-colorscheme="light"></div>
     </div>
 </div>
 {include file='right.tpl'}
 {literal}
 <script type="text/javascript">
-var adloca=$('#moving-boxes').offset().top; 
- $(window).scroll(function () { 
+var adloca=$('#moving-boxes').offset().top;
+ $(window).scroll(function () {
     var curloca=$(window).scrollTop();
     if(curloca>adloca){
         $('#moving-boxes').css('position','fixed');
@@ -24,6 +24,6 @@ var adloca=$('#moving-boxes').offset().top;
         $('#moving-boxes').css('z-index','!important');
     };
     });
-</script> 
-{/literal}   
+</script>
+{/literal}
 <div id="footer" class="">

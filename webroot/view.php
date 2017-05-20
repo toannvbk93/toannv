@@ -55,7 +55,9 @@ if ($error == "")
 		STemplate::assign('phase',$phase);
 		$USERID = $parray[0]['USERID'];
 		STemplate::assign('USERID',$USERID);
-		$SID = $_SESSION['USERID'];
+		$SID = "";
+    if(isset($_SESSION['USERID']))
+      $SID = $_SESSION['USERID'];
 		if($SID != "" && $USERID != "")
 		{
 			if($SID == $USERID)

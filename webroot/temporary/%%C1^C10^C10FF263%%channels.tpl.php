@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-18 16:33:28
+<?php /* Smarty version 2.6.6, created on 2017-05-20 06:54:26
          compiled from channels.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'channels.tpl', 5, false),array('modifier', 'stripslashes', 'channels.tpl', 6, false),array('insert', 'get_advertisement', 'channels.tpl', 14, false),)), $this); ?>

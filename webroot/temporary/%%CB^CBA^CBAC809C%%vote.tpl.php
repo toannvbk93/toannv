@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-19 19:17:22
+<?php /* Smarty version 2.6.6, created on 2017-05-20 07:49:49
          compiled from vote.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'vote.tpl', 5, false),array('modifier', 'stripslashes', 'vote.tpl', 6, false),array('insert', 'get_advertisement', 'vote.tpl', 15, false),)), $this); ?>

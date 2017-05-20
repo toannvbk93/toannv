@@ -37,7 +37,7 @@
                             </div>
                             {if $displaywm eq "0" AND $posts[i].pic ne "" AND $posts[i].gif ne "1" AND $posts[i].nsfw eq "0"}
                             <div class="watermark-clear"></div>
-                            {/if}                          
+                            {/if}
                         </div>
                         <div style="position:relative;width:220px;float:right">
                             <div class="info b9gcs-stop" id="action-{$posts[i].PID}">
@@ -52,9 +52,9 @@
                                         </div>
                                     <div class="clear"></div>
                                 </div>
-                                
+
                                 <!-- /ket thuc them vao info -->
-                                                                                          
+
                                 <p>
                                     <span class="comment">
                                         <fb:comments-count href="{$baseurl}{$postfolder}{$posts[i].PID}"></fb:comments-count>
@@ -63,14 +63,14 @@
                                     <!-- <span id="love_count_{$posts[i].PID}" class="loved" votes="{$posts[i].favclicks}" score="0">{$posts[i].favclicks}</span> -->
                                     <span score="0" votes="{$posts[i].view}" class="view" id="view_count">{$posts[i].view}</span>
                                 </p>
-                             
+
                                 <div class="sharing-box ">
                                     <hr class="arrow" />
                                       <ul class="sharing ">
                                         <li class="facebook" id="share1-{$posts[i].PID}">
                                             <span id="list-share-twitter-{$posts[i].PID}">
                                                 {if $share1 eq 1}
-                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>     
+                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>
                                                 {elseif $share1 eq 2}
                                                 <div style="float:right" class="facebook-share-btn">
                                                     <fb:share-button href="{$baseurl}{$postfolder}{$posts[i].PID}" type="button_count"></fb:share-button>
@@ -80,7 +80,7 @@
                                                 {/if}
                                             </span>
                                                 {if $share2 eq 1}
-                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>     
+                                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="{$posts[i].story|stripslashes|truncate:20:"...":true}" data-url="{$baseurl}{$postfolder}{$posts[i].PID}" data-count="horizontal" data-via="">&nbsp;</a>
                                                 {elseif $share2 eq 2}
                                                 <div style="float:right" class="facebook-share-btn">
                                                     <fb:share-button href="{$baseurl}{$postfolder}{$posts[i].PID}" type="button_count"></fb:share-button>
@@ -99,7 +99,7 @@
  {if $smarty.section.i.first}
       <li style="padding: 0px;">
             <div style="background-color: #EEEEEE;margin: 10px 0px 10px 0px;padding: 5px;">
-                                <span style="font-size: 18px;color:#880015"><b>Like <a style="display:inline;" href="http://www.facebook.com/{$FACEBOOK_PROFILE}" target="_blank">codehaivl2015.com trên Facebook</a> để được cười nhiều hơn;)</b></span>
+                                <span style="font-size: 18px;color:#880015"><b>Like <a style="display:inline;" href="http://www.facebook.com/{$FACEBOOK_PROFILE}" target="_blank"> trên Facebook</a> {$lang354}</b></span>
                 <br>    <div class="fb-like" data-href="http://www.facebook.com/{$FACEBOOK_PROFILE}" data-width="450" data-show-faces="false" data-send="false"></div>
             </div>
             </li>
