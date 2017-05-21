@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-20 07:49:41
+<?php /* Smarty version 2.6.6, created on 2017-05-20 18:06:22
          compiled from home_bit.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'home_bit.tpl', 1, false),array('modifier', 'stripslashes', 'home_bit.tpl', 1, false),array('modifier', 'truncate', 'home_bit.tpl', 1, false),array('insert', 'return_youtube2', 'home_bit.tpl', 21, false),array('insert', 'return_fod2', 'home_bit.tpl', 26, false),array('insert', 'return_vfy2', 'home_bit.tpl', 29, false),array('insert', 'return_vmo2', 'home_bit.tpl', 31, false),array('insert', 'get_time_to_days_ago', 'home_bit.tpl', 50, false),array('insert', 'get_fav_count', 'home_bit.tpl', 62, false),array('insert', 'get_advertisement', 'home_bit.tpl', 106, false),)), $this); ?>
@@ -71,7 +71,7 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'return_vmo2
                             </div>
                             <?php if ($this->_tpl_vars['displaywm'] == '0' && $this->_tpl_vars['posts'][$this->_sections['i']['index']]['pic'] != "" && $this->_tpl_vars['posts'][$this->_sections['i']['index']]['gif'] != '1' && $this->_tpl_vars['posts'][$this->_sections['i']['index']]['nsfw'] == '0'): ?>
                             <div class="watermark-clear"></div>
-                            <?php endif; ?>                          
+                            <?php endif; ?>
                         </div>
                         <div style="position:relative;width:220px;float:right">
                             <div class="info b9gcs-stop" id="action-<?php echo $this->_tpl_vars['posts'][$this->_sections['i']['index']]['PID']; ?>
@@ -98,9 +98,9 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_time_to
                                         </div>
                                     <div class="clear"></div>
                                 </div>
-                                
+
                                 <!-- /ket thuc them vao info -->
-                                                                                          
+
                                 <p>
                                     <span class="comment">
                                         <fb:comments-count href="<?php echo $this->_tpl_vars['baseurl'];  echo $this->_tpl_vars['postfolder'];  echo $this->_tpl_vars['posts'][$this->_sections['i']['index']]['PID']; ?>
@@ -117,7 +117,7 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_fav_cou
 " class="view" id="view_count"><?php echo $this->_tpl_vars['posts'][$this->_sections['i']['index']]['view']; ?>
 </span>
                                 </p>
-                             
+
                                 <div class="sharing-box ">
                                     <hr class="arrow" />
                                       <ul class="sharing ">
@@ -128,7 +128,7 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_fav_cou
                                                 <?php if ($this->_tpl_vars['share1'] == 1): ?>
                                                     <a href="https://twitter.com/share" class="twitter-share-button" data-text="<?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['posts'][$this->_sections['i']['index']]['story'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)))) ? $this->_run_mod_handler('truncate', true, $_tmp, 20, "...", true) : smarty_modifier_truncate($_tmp, 20, "...", true)); ?>
 " data-url="<?php echo $this->_tpl_vars['baseurl'];  echo $this->_tpl_vars['postfolder'];  echo $this->_tpl_vars['posts'][$this->_sections['i']['index']]['PID']; ?>
-" data-count="horizontal" data-via="">&nbsp;</a>     
+" data-count="horizontal" data-via="">&nbsp;</a>
                                                 <?php elseif ($this->_tpl_vars['share1'] == 2): ?>
                                                 <div style="float:right" class="facebook-share-btn">
                                                     <fb:share-button href="<?php echo $this->_tpl_vars['baseurl'];  echo $this->_tpl_vars['postfolder'];  echo $this->_tpl_vars['posts'][$this->_sections['i']['index']]['PID']; ?>
@@ -143,7 +143,7 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_fav_cou
                                                 <?php if ($this->_tpl_vars['share2'] == 1): ?>
                                                     <a href="https://twitter.com/share" class="twitter-share-button" data-text="<?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['posts'][$this->_sections['i']['index']]['story'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)))) ? $this->_run_mod_handler('truncate', true, $_tmp, 20, "...", true) : smarty_modifier_truncate($_tmp, 20, "...", true)); ?>
 " data-url="<?php echo $this->_tpl_vars['baseurl'];  echo $this->_tpl_vars['postfolder'];  echo $this->_tpl_vars['posts'][$this->_sections['i']['index']]['PID']; ?>
-" data-count="horizontal" data-via="">&nbsp;</a>     
+" data-count="horizontal" data-via="">&nbsp;</a>
                                                 <?php elseif ($this->_tpl_vars['share2'] == 2): ?>
                                                 <div style="float:right" class="facebook-share-btn">
                                                     <fb:share-button href="<?php echo $this->_tpl_vars['baseurl'];  echo $this->_tpl_vars['postfolder'];  echo $this->_tpl_vars['posts'][$this->_sections['i']['index']]['PID']; ?>
@@ -171,7 +171,8 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_fav_cou
       <li style="padding: 0px;">
             <div style="background-color: #EEEEEE;margin: 10px 0px 10px 0px;padding: 5px;">
                                 <span style="font-size: 18px;color:#880015"><b>Like <a style="display:inline;" href="http://www.facebook.com/<?php echo $this->_tpl_vars['FACEBOOK_PROFILE']; ?>
-" target="_blank">codehaivl2015.com trên Facebook</a> để được cười nhiều hơn;)</b></span>
+" target="_blank"> trên Facebook</a> <?php echo $this->_tpl_vars['lang354']; ?>
+</b></span>
                 <br>    <div class="fb-like" data-href="http://www.facebook.com/<?php echo $this->_tpl_vars['FACEBOOK_PROFILE']; ?>
 " data-width="450" data-show-faces="false" data-send="false"></div>
             </div>
