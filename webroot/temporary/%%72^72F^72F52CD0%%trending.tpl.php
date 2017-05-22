@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-20 06:54:35
+<?php /* Smarty version 2.6.6, created on 2017-05-22 16:53:31
          compiled from trending.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'trending.tpl', 5, false),array('modifier', 'stripslashes', 'trending.tpl', 6, false),array('insert', 'get_advertisement', 'trending.tpl', 15, false),)), $this); ?>
@@ -49,13 +49,13 @@ $this->_sections['f']['last']       = ($this->_sections['f']['iteration'] == $th
  <div style="margin-bottom:5px;" align="center">    <?php require_once(SMARTY_CORE_DIR . 'core.run_insert_handler.php');
 echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_advertisement', 'AID' => 8)), $this); ?>
 </div>
-    <div id="content-holder">        
+    <div id="content-holder">
         <div class="main-filter ">
          <h1 style="margin-left:15px;margin-top: 10px;">Cũ người mới ta :)</h1>
             <?php if ($this->_tpl_vars['thumbs'] == '1'): ?>
             <a id="changeview" class="view_thumbs" href="<?php echo $this->_tpl_vars['baseurl']; ?>
 /trending?view=thumbs" title="Toggle Views"><?php echo $this->_tpl_vars['lang258']; ?>
-</a>           
+</a>
             <?php endif; ?>
             <?php if ($this->_tpl_vars['safemode'] == '1'): ?>
             <?php if ($_SESSION['USERID'] != ""): ?>
@@ -74,19 +74,22 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_adverti
             <?php endif; ?>
             <?php endif; ?>
         </div>
-        <div id="content" listPage="hot">   
-        
-         
-            
+        <div id="content" listPage="hot">
+
+
+
             <div id="use-tips">
                 <div id="view-info" class="list-tips">
                     <div id="shortcut-event-label" style="display:none"><?php echo $this->_tpl_vars['lang171']; ?>
 </div>
-                    <span><b>Mẹo</b>: Ai cũng có thể đăng ảnh và video lên codehaivl2015.com. Thử <a href="/submit?file=1">đăng ngay!</a></span>
-                     <a class="keyboard_link" href="#keyboard">Cách lướt ảnh nhanh hơn tại đây</a>                   
+                    <span><b>Mẹo</b>: <?php echo $this->_tpl_vars['lang356']; ?>
+<a href="/submit?file=1"><?php echo $this->_tpl_vars['lang357']; ?>
+!</a></span>
+                     <a class="keyboard_link" href="#keyboard"><?php echo $this->_tpl_vars['lang358']; ?>
+</a>
                 </div>
-            </div>     
-            
+            </div>
+
            <div id="entries-content" class="list">
                 <ul id="entries-content-ul" class="col-1">
                     <?php unset($this->_sections['i']);
@@ -118,12 +121,15 @@ $this->_smarty_include(array('smarty_include_tpl_file' => "trends_bit.tpl", 'sma
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-                    <?php endfor; endif; ?>                    
+                    <?php endfor; endif; ?>
                 </ul>
             </div>
- <div class="plzVoteBottom"><span style="color:red">Giúp</span>  codehaivl2015.com <a href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
-            <div id="lastPostsLoader"></div>                
+ <div class="plzVoteBottom"><span style="color:red"><?php echo $this->_tpl_vars['lang332']; ?>
+</span> <a href="<?php echo $this->_tpl_vars['baseurl']; ?>
+/vote"><?php echo $this->_tpl_vars['lang333']; ?>
+</a> <?php echo $this->_tpl_vars['lang334']; ?>
+</div>
+            <div id="lastPostsLoader"></div>
             <?php if ($this->_tpl_vars['AUTOSCROLL'] == '1'): ?>
             <div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>
             <?php echo '
@@ -153,7 +159,7 @@ unset($_smarty_tpl_vars);
                         if  ((curloc+document.documentElement.clientHeight+1)>=($(document).height()-400) && ajaxstart==1 ) {
                      lastAddedLiveFunc();
                      $(\'#load_image\').css(\'display\',\'block\');
-                     ajaxstart=0;   
+                     ajaxstart=0;
                      tpage = tpage+1;
                     };
                     if(curloc>$(window).height()){$(\'#backtotop\').slideDown();}else{$(\'#backtotop\').slideUp();};
@@ -173,7 +179,7 @@ unset($_smarty_tpl_vars);
                     { var curloc=$(window).scrollTop(); }
                     var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
                     var  scrolltrigger = 0.95;
-                 
+
                     // if  ((wintop/(docheight-winheight)) > scrolltrigger) {
                     //  lastAddedLiveFunc();
                     //  tpage = tpage+1;
@@ -203,8 +209,8 @@ unset($_smarty_tpl_vars);
                 <a href="#" onclick="return false;" class="older disabled"><?php echo $this->_tpl_vars['lang167']; ?>
  &raquo;</a>
                 <?php endif; ?>
-            </div>  
-            <?php endif; ?>   
+            </div>
+            <?php endif; ?>
         </div>
         <?php echo '
         <script type="text/javascript">
@@ -216,10 +222,10 @@ unset($_smarty_tpl_vars);
         }else{
         $(this).addClass(\'unloved\');
         if($(\'#post_love_\'+id).hasClass(\'loved\')){
-        ulikedeg($(this).attr(\'entryId\'),-1,1); 
+        ulikedeg($(this).attr(\'entryId\'),-1,1);
         $(\'#post_love_\'+id).removeClass(\'loved\');
         }else{
-        ulikedeg($(this).attr(\'entryId\'),0,1);  
+        ulikedeg($(this).attr(\'entryId\'),0,1);
         }
         }
         });
@@ -237,7 +243,7 @@ unset($_smarty_tpl_vars);
         ulikedeg($(this).attr(\'rel\'),1,0);
         }
         }
-        });        
+        });
         function ulikedeg(p,l,u){
         jQuery.ajax({
         type:\'POST\',
@@ -247,7 +253,7 @@ unset($_smarty_tpl_vars);
         $(\'#love_count_\'+p).html(e);
         }
         });
-        }        
+        }
         </script>
         '; ?>
 
@@ -259,8 +265,8 @@ $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
   echo '
 <script type="text/javascript">
-var adloca=$(\'#moving-boxes\').offset().top; 
- $(window).scroll(function () { 
+var adloca=$(\'#moving-boxes\').offset().top;
+ $(window).scroll(function () {
     var curloca=$(window).scrollTop();
     if(curloca>adloca){
         $(\'#moving-boxes\').css(\'position\',\'fixed\');
@@ -273,7 +279,7 @@ var adloca=$(\'#moving-boxes\').offset().top;
         $(\'#moving-boxes\').css(\'z-index\',\'!important\');
     };
     });
-</script> 
+</script>
 '; ?>
-   
+
 <div id="footer" class="">

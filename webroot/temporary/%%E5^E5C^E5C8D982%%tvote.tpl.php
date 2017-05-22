@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-20 06:38:43
+<?php /* Smarty version 2.6.6, created on 2017-05-22 16:51:06
          compiled from tvote.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'makeseo', 'tvote.tpl', 5, false),array('modifier', 'stripslashes', 'tvote.tpl', 6, false),array('modifier', 'truncate', 'tvote.tpl', 73, false),array('function', 'math', 'tvote.tpl', 38, false),array('insert', 'return_vfy', 'tvote.tpl', 53, false),array('insert', 'return_vmo', 'tvote.tpl', 57, false),)), $this); ?>

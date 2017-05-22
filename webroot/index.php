@@ -112,11 +112,13 @@ if (empty($currentpage)) {
     $tpage = $currentpage + 1;
 }
 STemplate::assign('tpage', $tpage);
-if ( isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "list") {
-    $templateselect = "home.tpl";
-} else {
-    $templateselect = "thumbs.tpl";
-}
+//toannv
+//if ( isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "list") {
+//    $templateselect = "home.tpl";
+//} else {
+  //  $templateselect = "thumbs.tpl";
+//}
+$templateselect = "home.tpl";
 //toannv
 $topgags = null;
 if ($config['topgags'] > 0) {

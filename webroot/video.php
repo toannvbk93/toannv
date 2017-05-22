@@ -2,11 +2,12 @@
 include("include/config.php");
 include("include/functions/import.php");
 $thebaseurl = $config['baseurl'];
-if (isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "" && $_REQUEST['view'] == "")
+if(isset($_SESSION['viewtype']) && isset ($_REQUEST['view']))
+if ( $_SESSION['viewtype'] == "" && $_REQUEST['view'] == "")
   {
     $_SESSION['viewtype'] = "list";
   }
-elseif ( isset ($_REQUEST['view']) && $_SESSION['viewtype'] == "list" && $_REQUEST['view'] == "")
+elseif (  $_SESSION['viewtype'] == "list" && $_REQUEST['view'] == "")
   {
     $_SESSION['viewtype'] = "list";
   }
@@ -14,7 +15,7 @@ elseif ($_SESSION['viewtype'] == "thumbs" && $_REQUEST['view'] == "")
   {
     $_SESSION['viewtype'] = "thumbs";
   }
-elseif ( isset ($_REQUEST['view']) && $_REQUEST['view'] != "")
+elseif ($_REQUEST['view'] != "")
   {
     $_SESSION['viewtype'] = $_REQUEST['view'];
   }
@@ -141,7 +142,7 @@ else
 STemplate::assign('tpage', $tpage);
 
 
-if ($_SESSION['viewtype'] == "list")
+if (isset($_SESSION['viewtype']) && $_SESSION['viewtype'] == "list")
   {
     $templateselect = "video.tpl";
   }

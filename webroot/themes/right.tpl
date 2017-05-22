@@ -1,6 +1,6 @@
-	
+
 	<div class="side-bar">
-			<div style="margin-bottom:5px;">          
+			<div style="margin-bottom:5px;">
             {insert name=get_advertisement AID=1}
 
             </div>
@@ -9,7 +9,7 @@
 				<h3>{$lang257} <a href="{$baseurl}/user/{$smarty.session.USERID|stripslashes}">{$smarty.session.USERNAME|stripslashes}</a></h3>
 				{insert name=get_member_profilepicture assign=profilepicture value=var USERID=$smarty.session.USERID}
 				<img id="uploaded_img" src="{$membersprofilepicurl}/thumbs/{$profilepicture}?{$smarty.now}" alt="avatar" style="border: 2px solid rgb(187, 187, 187); float: left; margin-right: 10px;width:80px;height:80px" />
-				<div class="userinfoblock"> 
+				<div class="userinfoblock">
 					<a href="{$baseurl}/user/{$smarty.session.USERID|stripslashes}">{$lang192}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{$baseurl}/user/{$smarty.session.USERID|stripslashes}/likes">{$lang193}</a><br>
 					<a href="{$baseurl}/settings">{$lang45}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{$baseurl}/user/{$smarty.session.USERID|stripslashes}/messages">{$lang194}</a><br>
 				</div>
@@ -27,29 +27,29 @@
 				<div style="clear: both;"></div>
 			</div>
 			</div>
-		{else}  
-		
+		{else}
+
 			<div class="social-block">
-		
+
 				<div id="signup-desc" class="description">
 				<div class="spcl-button-wrap">
-				
+
 				{if $TC eq "1"}
 				<a class="spcl-button facebook badge-facebook-connect" label="LoginFormFacebookButton" next="" href="https://www.facebook.com/dialog/permissions.request?app_id={$FACEBOOK_APP_ID}&display=page&next={$baseurl}/&response_type=code&fbconnect=1&perms=email,user_birthday,user_about_me">{$lang14}</a>
-				
+
 				{/if}
 				</div>
 				</div>
 			</div>
 		{/if}
    <div>
-        <a class="share-btn" href="{$baseurl}/submit" class="buttons spaceBottom">Click để bắt đầu chia sẻ những bức ảnh vui!</a>
+        <a class="share-btn" href="{$baseurl}/submit" class="buttons spaceBottom">{$lang368}</a>
         <div class="clear">
         </div>
     </div><br/>
- 
+
 	<div>
-		
+
 			<div class="clearfix"></div>
 	</div>
 	<div class="top-10">
@@ -84,12 +84,12 @@
             </div>
 		</div>
     <div>
-	<div class="fb-like-box" data-href="https://www.facebook.com/codehaivl2015.como" data-width="300" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+	<div class="fb-like-box" data-href="https://www.facebook.com/" data-width="300" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 	<div class="clearfix"></div>
 		</div>
- 
+
         <div>
-         
+
 			{if $r[0].PID ne "" AND $rhome eq "1"}
 			{insert name=get_advertisement value=var AID="7"}
 			<div id="post-gag-stay" class="_badge-sticky-elements box_info" data-y="60">
@@ -97,7 +97,7 @@
 				    <h3>{$lang251}</h3>
                     <div class="box-wrapper">
 				        <ol>
-				        {section name=i loop=$r}                  
+				        {section name=i loop=$r}
 				        <a class="wrap" href="{$baseurl}{$postfolder}{$r[i].PID}"  onclick="GAG.GA.track('RelatedContent', 'Clicked-Post-Sidebar', 'Position-1', 1)"  >
 					        <li>
 						        {if $r[i].nsfw eq "1" AND $smarty.session.FILTER ne "0"}
@@ -121,14 +121,14 @@
                     </div>
 				</div>
 			</div>
-		{/if} 
+		{/if}
 <div id="post-gag-stay" class="_badge-sticky-elements" data-y="60">
 	<div class="vr-box">
-	<h3>Giúp codehaivl2015.com duyệt bài này</h3>
+	<h3>{$lang288}</h3>
         <div class="info-wrapper">
 	        <ol>
 	        {section name=i loop=$vr}
-	
+
 		        <li><a class="wrap" href="{$baseurl}{$postfolder}{$vr[i].PID}"  onclick="GAG.GA.track('RelatedContent', 'Clicked-Post-Sidebar', 'Position-1', 1)"  >
                     {if $vr[i].nsfw eq "1" AND $smarty.session.FILTER ne "0"}
 				        <img src="{$baseurl}/images/nsfw_thumb.jpg" alt="{$vr[i].story|stripslashes}" />
@@ -157,13 +157,13 @@
 			        <span class="viewed">{$vr[i].view}</span>
 			        </p>
 		        </li>
-	
+
 	        {/section}
 	        </ol>
         </div>
 	</div>
 </div>
-			 <div class="s-300" id="bottom-s300">            
+			 <div class="s-300" id="bottom-s300">
             	{if $smarty.session.FILTER eq "0" AND $NSFWADS}
         	{insert name=get_advertisement AID=4}
             {else}
@@ -172,6 +172,6 @@
 		{insert name=get_advertisement AID=7}
 			{/if}
             </div>
-			
+
         </div>
     </div>

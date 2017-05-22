@@ -13,11 +13,11 @@
 <div id="main">
 
  <div style="margin-bottom:5px;" align="center">    {insert name=get_advertisement AID=8}</div>
-    <div id="content-holder">        
+    <div id="content-holder">
         <div class="main-filter ">
          <h1 style="margin-left:15px;margin-top: 10px;">Cũ người mới ta :)</h1>
             {if $thumbs eq "1"}
-            <a id="changeview" class="view_thumbs" href="{$baseurl}/trending?view=thumbs" title="Toggle Views">{$lang258}</a>           
+            <a id="changeview" class="view_thumbs" href="{$baseurl}/trending?view=thumbs" title="Toggle Views">{$lang258}</a>
             {/if}
             {if $safemode eq "1"}
             {if $smarty.session.USERID ne ""}
@@ -31,27 +31,27 @@
             {/if}
             {/if}
         </div>
-        <div id="content" listPage="hot">   
-        
-         
-            
+        <div id="content" listPage="hot">
+
+
+
             <div id="use-tips">
                 <div id="view-info" class="list-tips">
                     <div id="shortcut-event-label" style="display:none">{$lang171}</div>
-                    <span><b>Mẹo</b>: Ai cũng có thể đăng ảnh và video lên codehaivl2015.com. Thử <a href="/submit?file=1">đăng ngay!</a></span>
-                     <a class="keyboard_link" href="#keyboard">Cách lướt ảnh nhanh hơn tại đây</a>                   
+                    <span><b>Mẹo</b>: {$lang356}<a href="/submit?file=1">{$lang357}!</a></span>
+                     <a class="keyboard_link" href="#keyboard">{$lang358}</a>
                 </div>
-            </div>     
-            
+            </div>
+
            <div id="entries-content" class="list">
                 <ul id="entries-content-ul" class="col-1">
                     {section name=i loop=$posts}
                     {include file="trends_bit.tpl"}
-                    {/section}                    
+                    {/section}
                 </ul>
             </div>
- <div class="plzVoteBottom"><span style="color:red">Giúp</span>  codehaivl2015.com <a href="{$baseurl}/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
-            <div id="lastPostsLoader"></div>                
+ <div class="plzVoteBottom"><span style="color:red">{$lang332}</span> <a href="{$baseurl}/vote">{$lang333}</a> {$lang334}</div>
+            <div id="lastPostsLoader"></div>
             {if $AUTOSCROLL eq "1"}
             <div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>
             {literal}
@@ -81,7 +81,7 @@
                         if  ((curloc+document.documentElement.clientHeight+1)>=($(document).height()-400) && ajaxstart==1 ) {
                      lastAddedLiveFunc();
                      $('#load_image').css('display','block');
-                     ajaxstart=0;   
+                     ajaxstart=0;
                      tpage = tpage+1;
                     };
                     if(curloc>$(window).height()){$('#backtotop').slideDown();}else{$('#backtotop').slideUp();};
@@ -100,7 +100,7 @@
                     { var curloc=$(window).scrollTop(); }
                     var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
                     var  scrolltrigger = 0.95;
-                 
+
                     // if  ((wintop/(docheight-winheight)) > scrolltrigger) {
                     //  lastAddedLiveFunc();
                     //  tpage = tpage+1;
@@ -121,8 +121,8 @@
                 {else}
                 <a href="#" onclick="return false;" class="older disabled">{$lang167} &raquo;</a>
                 {/if}
-            </div>  
-            {/if}   
+            </div>
+            {/if}
         </div>
         {literal}
         <script type="text/javascript">
@@ -134,10 +134,10 @@
         }else{
         $(this).addClass('unloved');
         if($('#post_love_'+id).hasClass('loved')){
-        ulikedeg($(this).attr('entryId'),-1,1); 
+        ulikedeg($(this).attr('entryId'),-1,1);
         $('#post_love_'+id).removeClass('loved');
         }else{
-        ulikedeg($(this).attr('entryId'),0,1);  
+        ulikedeg($(this).attr('entryId'),0,1);
         }
         }
         });
@@ -155,7 +155,7 @@
         ulikedeg($(this).attr('rel'),1,0);
         }
         }
-        });        
+        });
         function ulikedeg(p,l,u){
         jQuery.ajax({
         type:'POST',
@@ -165,7 +165,7 @@
         $('#love_count_'+p).html(e);
         }
         });
-        }        
+        }
         </script>
         {/literal}
     </div>
@@ -173,8 +173,8 @@
 {include file='right.tpl'}
 {literal}
 <script type="text/javascript">
-var adloca=$('#moving-boxes').offset().top; 
- $(window).scroll(function () { 
+var adloca=$('#moving-boxes').offset().top;
+ $(window).scroll(function () {
     var curloca=$(window).scrollTop();
     if(curloca>adloca){
         $('#moving-boxes').css('position','fixed');
@@ -187,6 +187,6 @@ var adloca=$('#moving-boxes').offset().top;
         $('#moving-boxes').css('z-index','!important');
     };
     });
-</script> 
-{/literal}   
+</script>
+{/literal}
 <div id="footer" class="">

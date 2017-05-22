@@ -378,4 +378,7 @@ $lang['363'] = "ở mỗi hình ảnh dưới đây để <b>bình chọn</b> nh
 $lang['364'] = "Chú ý: Nếu ảnh có 10 người bình chọn sẽ xuất hiện trên trang chủ";
 $lang['365'] = "Chán";
 $lang['366'] = "Duyệt";
+$lang['367'] = "trên Facebook";
+$lang['368'] = "Click để bắt đầu chia sẻ những bức ảnh vui!";
+$lang['369'] = "Xem thêm";
 ?>

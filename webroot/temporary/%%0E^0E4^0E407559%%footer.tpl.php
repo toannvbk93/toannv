@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-20 18:06:23
+<?php /* Smarty version 2.6.6, created on 2017-05-22 16:55:14
          compiled from footer.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'get_advertisement', 'footer.tpl', 4, false),array('modifier', 'stripslashes', 'footer.tpl', 11, false),)), $this); ?>

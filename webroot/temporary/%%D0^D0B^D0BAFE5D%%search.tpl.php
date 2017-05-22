@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-19 19:09:11
+<?php /* Smarty version 2.6.6, created on 2017-05-22 15:30:32
          compiled from search.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'search.tpl', 18, false),array('modifier', 'stripslashes', 'search.tpl', 23, false),array('modifier', 'truncate', 'search.tpl', 37, false),)), $this); ?>

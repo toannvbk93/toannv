@@ -1,10 +1,10 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-20 18:06:22
+<?php /* Smarty version 2.6.6, created on 2017-05-22 16:55:14
          compiled from right.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'get_advertisement', 'right.tpl', 4, false),array('insert', 'get_member_profilepicture', 'right.tpl', 10, false),array('modifier', 'stripslashes', 'right.tpl', 9, false),array('modifier', 'truncate', 'right.tpl', 112, false),)), $this); ?>
-	
+
 	<div class="side-bar">
-			<div style="margin-bottom:5px;">          
+			<div style="margin-bottom:5px;">
             <?php require_once(SMARTY_CORE_DIR . 'core.run_insert_handler.php');
 echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_advertisement', 'AID' => 1)), $this); ?>
 
@@ -24,7 +24,7 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_member_
 /thumbs/<?php echo $this->_tpl_vars['profilepicture']; ?>
 ?<?php echo time(); ?>
 " alt="avatar" style="border: 2px solid rgb(187, 187, 187); float: left; margin-right: 10px;width:80px;height:80px" />
-				<div class="userinfoblock"> 
+				<div class="userinfoblock">
 					<a href="<?php echo $this->_tpl_vars['baseurl']; ?>
 /user/<?php echo ((is_array($_tmp=$_SESSION['USERID'])) ? $this->_run_mod_handler('stripslashes', true, $_tmp) : stripslashes($_tmp)); ?>
 "><?php echo $this->_tpl_vars['lang192']; ?>
@@ -56,19 +56,19 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_member_
 				<div style="clear: both;"></div>
 			</div>
 			</div>
-		<?php else: ?>  
-		
+		<?php else: ?>
+
 			<div class="social-block">
-		
+
 				<div id="signup-desc" class="description">
 				<div class="spcl-button-wrap">
-				
+
 				<?php if ($this->_tpl_vars['TC'] == '1'): ?>
 				<a class="spcl-button facebook badge-facebook-connect" label="LoginFormFacebookButton" next="" href="https://www.facebook.com/dialog/permissions.request?app_id=<?php echo $this->_tpl_vars['FACEBOOK_APP_ID']; ?>
 &display=page&next=<?php echo $this->_tpl_vars['baseurl']; ?>
 /&response_type=code&fbconnect=1&perms=email,user_birthday,user_about_me"><?php echo $this->_tpl_vars['lang14']; ?>
 </a>
-				
+
 				<?php endif; ?>
 				</div>
 				</div>
@@ -76,13 +76,14 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_member_
 		<?php endif; ?>
    <div>
         <a class="share-btn" href="<?php echo $this->_tpl_vars['baseurl']; ?>
-/submit" class="buttons spaceBottom">Click để bắt đầu chia sẻ những bức ảnh vui!</a>
+/submit" class="buttons spaceBottom"><?php echo $this->_tpl_vars['lang368']; ?>
+</a>
         <div class="clear">
         </div>
     </div><br/>
- 
+
 	<div>
-		
+
 			<div class="clearfix"></div>
 	</div>
 	<div class="top-10">
@@ -150,12 +151,12 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
             </div>
 		</div>
     <div>
-	<div class="fb-like-box" data-href="https://www.facebook.com/codehaivl2015.como" data-width="300" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+	<div class="fb-like-box" data-href="https://www.facebook.com/" data-width="300" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 	<div class="clearfix"></div>
 		</div>
- 
+
         <div>
-         
+
 			<?php if ($this->_tpl_vars['r'][0]['PID'] != "" && $this->_tpl_vars['rhome'] == '1'): ?>
 			<?php require_once(SMARTY_CORE_DIR . 'core.run_insert_handler.php');
 echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_advertisement', 'value' => 'var', 'AID' => '7')), $this); ?>
@@ -189,7 +190,7 @@ $this->_sections['i']['index_prev'] = $this->_sections['i']['index'] - $this->_s
 $this->_sections['i']['index_next'] = $this->_sections['i']['index'] + $this->_sections['i']['step'];
 $this->_sections['i']['first']      = ($this->_sections['i']['iteration'] == 1);
 $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $this->_sections['i']['total']);
-?>                  
+?>
 				        <a class="wrap" href="<?php echo $this->_tpl_vars['baseurl'];  echo $this->_tpl_vars['postfolder'];  echo $this->_tpl_vars['r'][$this->_sections['i']['index']]['PID']; ?>
 "  onclick="GAG.GA.track('RelatedContent', 'Clicked-Post-Sidebar', 'Position-1', 1)"  >
 					        <li>
@@ -229,10 +230,11 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
                     </div>
 				</div>
 			</div>
-		<?php endif; ?> 
+		<?php endif; ?>
 <div id="post-gag-stay" class="_badge-sticky-elements" data-y="60">
 	<div class="vr-box">
-	<h3>Giúp codehaivl2015.com duyệt bài này</h3>
+	<h3><?php echo $this->_tpl_vars['lang288']; ?>
+</h3>
         <div class="info-wrapper">
 	        <ol>
 	        <?php unset($this->_sections['i']);
@@ -259,7 +261,7 @@ $this->_sections['i']['index_next'] = $this->_sections['i']['index'] + $this->_s
 $this->_sections['i']['first']      = ($this->_sections['i']['iteration'] == 1);
 $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $this->_sections['i']['total']);
 ?>
-	
+
 		        <li><a class="wrap" href="<?php echo $this->_tpl_vars['baseurl'];  echo $this->_tpl_vars['postfolder'];  echo $this->_tpl_vars['vr'][$this->_sections['i']['index']]['PID']; ?>
 "  onclick="GAG.GA.track('RelatedContent', 'Clicked-Post-Sidebar', 'Position-1', 1)"  >
                     <?php if ($this->_tpl_vars['vr'][$this->_sections['i']['index']]['nsfw'] == '1' && $_SESSION['FILTER'] != '0'): ?>
@@ -310,13 +312,13 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
 </span>
 			        </p>
 		        </li>
-	
+
 	        <?php endfor; endif; ?>
 	        </ol>
         </div>
 	</div>
 </div>
-			 <div class="s-300" id="bottom-s300">            
+			 <div class="s-300" id="bottom-s300">
             	<?php if ($_SESSION['FILTER'] == '0' && $this->_tpl_vars['NSFWADS']): ?>
         	<?php require_once(SMARTY_CORE_DIR . 'core.run_insert_handler.php');
 echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_advertisement', 'AID' => 4)), $this); ?>
@@ -331,6 +333,6 @@ echo smarty_core_run_insert_handler(array('args' => array('name' => 'get_adverti
 
 			<?php endif; ?>
             </div>
-			
+
         </div>
     </div>

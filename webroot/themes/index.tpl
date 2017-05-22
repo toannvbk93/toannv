@@ -46,10 +46,10 @@
                     {/section}
                 </ul>
                 	<div class="view-more" id="view_more_div">
-					<a class="next-page" id="next_page" href="#" style="display: inline;color:white;">xem thêm, còn nhiều lắm</a>
+					<a class="next-page" id="next_page" href="#" style="display: inline;color:white;">{$lang335}</a>
 				</div>
             </div>
- <div class="plzVoteBottom"><br><span style="color:red">Giúp</span>  codehaivl2015.com <a href="{$baseurl}/vote">bình chọn ảnh</a> để nhiều ảnh hay xuất hiện ở trang chủ hơn nhé</div>
+ <div class="plzVoteBottom"><br><span style="color:red">{$lang333}</span> <a href="{$baseurl}/vote">{$lang333}</a> {$lang334}</div>
             <div id="lastPostsLoader"></div>
 			{if $AUTOSCROLL eq "1"}
 			<div id="load_image" style="background:url(images/load.gif) center no-repeat; width:%100; height:50px;"> </div>

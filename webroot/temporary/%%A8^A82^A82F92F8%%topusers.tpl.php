@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.6, created on 2017-05-13 16:00:43
+<?php /* Smarty version 2.6.6, created on 2017-05-22 16:39:02
          compiled from topusers.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'get_advertisement', 'topusers.tpl', 52, false),)), $this); ?>
